@@ -1,6 +1,6 @@
-# Rabitz Studios (rabitzstudios)
+# rabbitz (rabbitz)
 
-Rabitz Studios is the leading media and entertainment company in Africa, driving the creative industry in Northern Nigeria and several parts of Africa at large by creating indigenous cultural centric content and sponsoring creative events throughout the continent.
+A Quasar Framework app
 
 ## Install the dependencies
 ```bash

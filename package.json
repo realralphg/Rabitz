@@ -1,20 +1,18 @@
 {
-  "name": "rabitzstudios",
+  "name": "rabbitz",
   "version": "0.0.1",
-  "description": "Rabitz Studios is the leading media and entertainment company in Africa, driving the creative industry in Northern Nigeria and several parts of Africa at large by creating indigenous cultural centric content and sponsoring creative events throughout the continent.",
-  "productName": "Rabitz Studios",
-  "author": "Isah Raphael <33344810+realralphg@users.noreply.github.com>",
+  "description": "A Quasar Framework app",
+  "productName": "rabbitz",
+  "author": "ralph and emmanuel",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "axios": "^0.21.1",
+    "@splidejs/vue-splide": "^0.5.15",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
-    "vue-i18n": "^9.0.0",
-    "vuex": "^4.0.1"
+    "quasar": "^2.0.0"
   },
   "devDependencies": {
     "@quasar/app": "^3.0.0"
