@@ -428,7 +428,12 @@
           mobile-arrows
           outside-arrows
         >
-          <q-tab class="text-white" name="musicstars" label="Music Stars" />
+          <q-tab class="text-white" name="musicstars" label="Native Stars" />
+          <q-tab
+            class="text-white"
+            name="foreignmusicstarsData"
+            label="Music Stars"
+          />
           <q-tab class="text-white" name="moviestars" label="Movie Stars" />
           <q-tab class="text-white" name="upcoming" label="Upcoming Artists" />
           <q-tab class="text-white" name="fashion" label="Fashion Stars" />
@@ -449,7 +454,7 @@
                         :key="star.id"
                       >
                         <div
-                          class="_3_zJ8691 RqckegCL dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz max_width"
+                          class="_3_zJ8691 RqckegCL dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz max_width maxx_width"
                           role="listitem"
                         >
                           <div class="_9qc3kKnu Una0M7xj dark _3alamt95">
@@ -492,6 +497,78 @@
                                 :songgs="star.track"
                                 :showLength="false"
                               />
+
+                              <!-- <div class="_1-5VpbwN">
+                                <span class="_3S6UbfDR">{{ star.label }}</span
+                                ><img
+                                  :src="star.labelimg"
+                                  class="lazyload _3m0TTDhY"
+                                />
+                              </div> -->
+                            </div>
+                            <q-btn
+                              @click="viewMember(star)"
+                              class="_1VFtEXND bg-primary text-white _1bcYCljm _2u-I7BW0 _3n8NuEgU"
+                              >View Profile</q-btn
+                            >
+                          </div>
+                        </div>
+                      </SplideSlide>
+                    </Splide>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </q-tab-panel>
+          <q-tab-panel name="foreignmusicstarsData">
+            <!-- {{ starsData }} -->
+            <div class="YSQ5c5aR">
+              <div>
+                <div role="tabpanel" class="EjKBP_ta sliderr DwsYntB3">
+                  <div class="_3BDPpGRM xK1Y6wFp VRzpBOaS" role="list">
+                    <Splide :options="options">
+                      <SplideSlide
+                        v-for="star in foreignmusicstarsData"
+                        :key="star.id"
+                      >
+                        <div
+                          class="_3_zJ8691 RqckegCL dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz max_width maxx_width"
+                          role="listitem"
+                        >
+                          <div class="_9qc3kKnu Una0M7xj dark _3alamt95">
+                            <q-btn
+                              @click="viewMember(star)"
+                              aria-hidden="true"
+                              tabindex="-1"
+                              class="oYfE6Xrf"
+                            >
+                              <img
+                                data-src="/images/ola.jpg"
+                                :src="star.img"
+                                alt=""
+                                class="lazyload _13TWm89r"
+                                width="100%"
+                                data-happo-hide="true"
+                              /><span
+                                class="XwLDZPC1"
+                                data-happo-hide="true"
+                              ></span>
+                              <div class="_3QI65u5h _2Nig7dk2">
+                                <span>View Full Profile</span>
+                              </div>
+                            </q-btn>
+                            <div class="_25TfQgrH dark">
+                              <div
+                                aria-hidden="true"
+                                tabindex="-1"
+                                class="_23yTT71X"
+                              >
+                                {{ star.name }}
+                              </div>
+                              <p class="_27Qy9QKP">{{ star.position }}</p>
+                              <p class="O2d2c2qD">
+                                {{ star.desc }}
+                              </p>
 
                               <!-- <div class="_1-5VpbwN">
                                 <span class="_3S6UbfDR">{{ star.label }}</span
@@ -670,7 +747,6 @@
                                 class="oYfE6Xrf"
                               >
                                 <img
-                                  style="height: 50%"
                                   :src="star.img"
                                   alt=""
                                   class="lazyload _13TWm89r"
@@ -729,11 +805,11 @@
                     data-testid="clients-grid-title"
                     class="_1r8wFQ13 _1jHz3wcf underline text-primary bold-text"
                   >
-                    Rabitz Studio Live
+                    Rabitz Studios Live
                   </h2>
                   <p class="_2Fa2w4cD">
                     Upcoming music artistes prove their worth at the Rabitz
-                    Studio Live sessions. These recordings are widely marketed
+                    Studios Live sessions. These recordings are widely marketed
                     to sponsors and record labels in the global music industry.
                   </p>
                 </div>
@@ -761,7 +837,7 @@
                       class="lazyload jeqnJEqF"
                     />
                   </div>
-                  <p class="Qq-iPMxM">{{ live.name }}</p>
+                  <!-- <p class="Qq-iPMxM">{{ live.name }}</p> -->
                   <div class="_1liAAfjS">
                     <p class="_2O26Zuqj">{{ live.small }}</p>
                     <p class="ivvUQSqp">{{ live.smallerText }}</p>
@@ -816,6 +892,14 @@
                     Produce quality audio projects with some of the finest music
                     producers across the continent
                   </p>
+                  <div class="">
+                    <q-btn
+                      to="/services"
+                      size="md"
+                      class="bg-primary text-white q-pa-sm q-mt-lg"
+                      >View full price list</q-btn
+                    >
+                  </div>
                 </div>
               </div>
               <div
@@ -852,7 +936,7 @@
                         Get an opportunity to work with Mastercraft and produce
                         amazing tracks...
                       </p>
-                      <small>Fee:₦5,000,000</small>
+                      <small>Fee:₦2,000,000</small>
                     </div>
                   </div>
                   <div
@@ -886,7 +970,7 @@
                         Get an opportunity to work with Young Willy and produce
                         amazing tracks...
                       </p>
-                      <small>Fee:₦5,000,000</small>
+                      <small>Fee:₦2,000,000</small>
                     </div>
                   </div>
                   <div
@@ -919,24 +1003,17 @@
                         Get an opportunity to work with Young John AKA the
                         wicked producer and produce amazing tracks...
                       </p>
-                      <small>Fee:₦5,000,000</small>
+                      <small>Fee:₦2,000,000</small>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="_7qDyl__j">
-            <!-- <p data-testid="footer-cta-title">Ready to get started?</p> -->
-            <div class="_2pGhqCYE">
-              <q-btn
-                to="/services"
-                size="sm"
-                class="bg-primary text-white q-pa-sm"
-                >View full price list</q-btn
-              >
-            </div>
-          </div>
+          <!-- <div class="_7qDyl__j">
+            <p data-testid="footer-cta-title">Ready to get started?</p>
+            
+          </div> -->
         </div>
       </div>
     </section>
@@ -1220,7 +1297,10 @@
             </q-card-section>
           </div>
 
-          <div class="col-md-3 col-sm-12 col-xs-12 q-py-md container">
+          <div
+            v-if="profile.track"
+            class="col-md-3 col-sm-12 col-xs-12 q-py-md container"
+          >
             <div class="text-h4 text-weight-medium q-pl-md">Top tracks</div>
             <PlayAudios
               :showLength="true"
@@ -1452,7 +1532,7 @@ export default {
       team: [
         {
           id: 1,
-          img: "/images/ppj.jpeg",
+          img: "/images/pwa.jpeg",
           name: "Pwajok",
           title: "CEO",
           longerDesc:
@@ -1489,12 +1569,11 @@ export default {
         songs: [
           {
             id: 1,
-            title: "Wow",
-            artist: "Post Malone",
+            title: "Go Jeje",
+            artist: "Jordan Bangoji",
             album: "",
-            url: "https://res.cloudinary.com/dmf10fesn/video/upload/v1548882863/audio/Post_Malone_-_Wow._playvk.com.mp3",
-            cover_art_url:
-              "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884701/audio/album%20arts/s-l300.jpg",
+            url: "https://rabitzsongs.cf/songs/GOJEJE.mp3",
+            cover_art_url: "/images/gojeje.jpeg",
           },
         ],
       },
@@ -1505,27 +1584,33 @@ export default {
           position: "Kaduna, Nigeria",
           desc: "Jordan Real Name Is Jordan Bangoji, He is a, basketball participant, Singer, Songwriter, Artist and likewise a college scholar from Kaduna state, he has been Emerged among the many prime three finalists  12 contestant on Nigerian Idol Season 7 in 2022.",
           longerDesc:
-            "Jordan Real Name Is Jordan Bangoji, He is a, basketball participant, Singer, Songwriter, Artist and likewise a college scholar from Kaduna state, he has been Emerged among the many prime three finalists  12 contestant on Nigerian Idol Season 7 in 2022. Jordan is from Kaduna State, North Central Region of Nigeria. At the time of scripting this put up, Jordan is on the age of twenty-two, Born 2000. His full, actual identify is Jordan Bangoji, he Plays Basketball, He sings, He write music and much extra of expertise.Jordan had the Judges amazed by his vocal skill proper from his first Audition and received a standing ovation at most of his subsequent performances at Theatre Week. Jordan knew he wished to be a singer as a result of it’s the solely means he finds true expression of who he’s. Jordan’s favorite second from Theatre Week was his duet efficiency and the one that would have been most pleased with his achievement was his elder brother who had handed on. Jordan hopes Nigerians will fall in love together with his character believes he would be the subsequent Nigerian Idol. Twenty-two-year-old Jordan is a scholar of the Ahmadu Bello University in Kaduna and has a eager curiosity in basketball, songwriting and music manufacturing. He began singing on the age of 12 and determined to go skilled when he turned 16. Jordan knew he wished to be a singer as a result of it’s the solely means he finds true expression of who he’s. He sings at concert events, weddings, birthdays and at church. He is trying ahead to the publicity Nigerian Idol will supply him. Ever since his first track ‘My People’, he has unfailingly delivered charming, all entrancing music to his followers. His distinctive sound is a spread which reveals from his Soulful songs comparable to ‘Aliens’ to his Afropop songs like ‘Na Only You’ and R&B songs like ‘One Question’. Jordan’s love for his society and hope for change in Nigeria displays via his music. He thirsts and hopes for nothing however greatness and positivity in Nigeria. Just like folks put on their hearts on their sleeves, Jordan reveals his coronary heart in his music. When listening to his songs, you aren’t simply listening to sounds. You are listening to like, greatness, enchantment, confidence, ache, and laughter. Jordan describes himself as ‘perfectly imperfect. He craves adventure, variety, and ‘wild’. His household is totally supportive of his music profession.",
+            "Jordan is a, basketball participant, Singer, Songwriter, Artist and likewise a college scholar from Kaduna state, he has been Emerged among the many prime three finalists  12 contestant on Nigerian Idol Season 7 in 2022. Jordan is from Kaduna State, North Central Region of Nigeria. At the time of scripting this put up, Jordan is on the age of twenty-two, Born 2000. His full, actual identify is Jordan Bangoji, he Plays Basketball, He sings, He write music and much extra of expertise.Jordan had the Judges amazed by his vocal skill proper from his first Audition and received a standing ovation at most of his subsequent performances at Theatre Week. Jordan knew he wished to be a singer as a result of it’s the solely means he finds true expression of who he’s. Jordan’s favorite second from Theatre Week was his duet efficiency and the one that would have been most pleased with his achievement was his elder brother who had handed on. Jordan hopes Nigerians will fall in love together with his character believes he would be the subsequent Nigerian Idol. Twenty-two-year-old Jordan is a scholar of the Ahmadu Bello University in Kaduna and has a eager curiosity in basketball, songwriting and music manufacturing. He began singing on the age of 12 and determined to go skilled when he turned 16. Jordan knew he wished to be a singer as a result of it’s the solely means he finds true expression of who he’s. He sings at concert events, weddings, birthdays and at church. He is trying ahead to the publicity Nigerian Idol will supply him. Ever since his first track ‘My People’, he has unfailingly delivered charming, all entrancing music to his followers. His distinctive sound is a spread which reveals from his Soulful songs comparable to ‘Aliens’ to his Afropop songs like ‘Na Only You’ and R&B songs like ‘One Question’. Jordan’s love for his society and hope for change in Nigeria displays via his music. He thirsts and hopes for nothing however greatness and positivity in Nigeria. Just like folks put on their hearts on their sleeves, Jordan reveals his coronary heart in his music. When listening to his songs, you aren’t simply listening to sounds. You are listening to like, greatness, enchantment, confidence, ache, and laughter. Jordan describes himself as ‘perfectly imperfect. He craves adventure, variety, and ‘wild’. His household is totally supportive of his music profession.",
           label: "Nigeria Idol contestant",
           img: "/images/jordan.png",
           track: [
             {
               id: 1,
-              title: "Wow",
-              artist: "Post Malone",
+              title: "My people",
+              artist: "Jordan Bangoji",
               album: "",
-              url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
-              cover_art_url:
-                "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+              url: "https://rabitzsongs.cf/songs/Jordan-MyPeople.mp3",
+              cover_art_url: "/images/mypeo.jpeg",
             },
             {
               id: 2,
-              title: "Wow",
-              artist: "lol Malone",
+              title: "Fight for your love",
+              artist: "Jordan Bangoji",
               album: "",
-              url: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
-              cover_art_url:
-                "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+              url: "https://rabitzsongs.cf/songs/Fightforyourlove.mp3",
+              cover_art_url: "/images/fakelove.jpeg",
+            },
+            {
+              id: 3,
+              title: "Go Jeje",
+              artist: "Jordan Bangoji",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/GOJEJE.mp3",
+              cover_art_url: "/images/gojeje.jpeg",
             },
           ],
 
@@ -1534,61 +1619,150 @@ export default {
         },
         {
           id: 2,
-          name: "Vzar",
-          position: "Kaduna, Nigeria",
-          desc: "Sarkodie, the fourth of five children was born on July 10, 1988.[5][6] He was raised in Koforidua before his parents moved to Tema where he started schooling. He attended Tema Methodist Day Senior High School and proceeded to IPMC, where he earned a degree in graphic design.",
-          longerDesc: `Sarkodie, the fourth of five children was born on July 10, 1988.[5][6] He was raised in Koforidua before his parents moved to Tema where he started schooling. He attended Tema Methodist Day Senior High School and proceeded to IPMC, where he earned a degree in graphic design. Sarkodie began his music career as an underground rapper, participating in Adom FM's popular rap competition Kasahare Level. He met his former manager Duncan Williams of Duncwills Entertainment while participating in the aforementioned competition. He also met musicians Edem and Castro, who introduced him to Hammer of The Last Two, an established record producer. Impressed by his rap flows, Hammer allowed Sarkodie to record two tracks for Edems maiden album Volta Regime.`,
-          label: "Blue Pie Records",
-          img: "/images/sarkodie2.png",
+          name: "Dia",
+          position: "Lagos, Nigeria",
+          desc: `Frank Ugochukwu Edwards (born 22 July 1989) is a Nigerian afro-highlife praise and worship singer and songwriter from Enugu State.[1] He is the founder and owner of the record label Rocktown Records, which is home to recording artists such as Edwards himself, Gil, Divine, King BAS, Nkay, David, Dudu and Micah Heavens, among others. `,
+          longerDesc: `DIA (Didam Is Amazing) aka Uncle DIA is an African rapper, song writer & producer with roots traced to Kaduna state Nigeria. Being the frontier of the "Good and intelligent music" (GAIM) movement, he has been able to carve a niche for himself in the rap echelon through his witty lyricism, dynamic flow and great command of words.`,
+          label: "Rocktown Music",
+          img: "/images/dia.jpg",
+
           track: [
             {
-              id: 2,
-              title: "Wow",
-              artist: "Post Malone",
+              id: 1,
+              title: "Gwaska",
+              artist: "DIA",
               album: "",
-              url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
-              cover_art_url:
-                "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+              url: "https://rabitzsongs.cf/songs/Gwaska.mp3",
+              cover_art_url: "/images/gwasaka.jpeg",
             },
             {
               id: 2,
-              title: "Wow",
-              artist: "Post Malone",
+              title: "PVC",
+              artist: "DIA",
               album: "",
-              url: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
-              cover_art_url:
-                "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+              url: "https://rabitzsongs.cf/songs/PVC.mp3",
+              cover_art_url: "/images/pvc.jpeg",
+            },
+            {
+              id: 3,
+              title: "Good day to be alive",
+              artist: "DIA",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/D.I.A-GoodDayToBeAlive.mp3",
+              cover_art_url: "/images/gdtba.jpeg",
+            },
+          ],
+          labelimg:
+            "https://gospelminds.com/wp-content/uploads/2017/10/Frank-Edwards-1.png",
+        },
+
+        {
+          id: 3,
+          name: "Rhymbox",
+
+          position: "Lagos, Nigeria",
+          desc: "",
+          longerDesc: `Rymboxx is originally from Edo state but is based in Kaduna. He is a singer, songwriter, producer, actor and OAP with a degree in mass communications. He believes in making music with a positive message to change the world- one step at a time. Rymboxx is currently a broadcast journalist with correct FM Kaduna with frequency '94.3', as an actor Rymboxx has featured in the movie About Us`,
+          label: "Loveword Records",
+          img: "/images/rhym.jpeg",
+          track: [
+            {
+              id: 1,
+              title: "I no fit pay",
+              artist: "Rhymbox",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/Rymboxx-INoFitPay.mp3",
+              cover_art_url: "/images/rhym1.jpeg",
+            },
+            {
+              id: 2,
+              title: "Outside",
+              artist: "Rhymbox",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/Rymboxx-Outside.mp3",
+              cover_art_url: "/images/lov.jpeg",
+            },
+            {
+              id: 3,
+              title: "MaryJane",
+              artist: "Rhymbox",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/Rymboxx-MaryJane.mp3",
+              cover_art_url: "/images/out.jpeg",
+            },
+          ],
+          labelimg:
+            "https://christembassy.org/wp-content/uploads/2019/01/lmam.png",
+        },
+        {
+          id: 4,
+          name: "Vzar",
+          position: "Kaduna, Nigeria",
+          desc: "",
+          longerDesc: `Hilary Jerry Joseph Didam, popularly known as Agwam V’zar (Sarkin Kati) is an award winning independent recording/performing Hip-hop artiste and music producer, born September 1st in Zaria, Kaduna State. He has a B.A in Fine Arts, from Ahmadu Bello University, Zaria. Initially inspired by the late Bala Miller as a kid, V’zar has over the decades morphed himself in to a prolific and influential brand in the Northern Nigerian rap scene. V’zar has released several singles, some of which are Superstar, Kati, Push, Make Am and most recently, Kayan Yaji. In 2019, he released a mixtape titled Poetry Over Collage, which was praised by some Nigerian Hiphop legends like Terry tha Rapman etc. In 2020, he released HEADZmen 1 &amp; 2, a series of songs featuring some of the most relevant Hip-hop artistes from Kaduna and Jos.He has worked with the likes of Terry tha Rapman, Pherowshuz, Gwan (Canada), Blackah (Naija Ninjas), Lyrical Dr. Smith, DJ Cinch, DIA, Kel Cypha etc. with a lot yet to unfold.The resilient artiste is still recording and has a project to be released soon. It is safe to say as a solo independent artiste V’zar has paid his dues, made a major mark, earned himself a spot, and deserves your support.`,
+          // label: "Blue Pie Records",
+          img: "/images/vzar.jpg",
+          track: [
+            {
+              id: 1,
+              title: "The Headzmen",
+              artist: "Vzar",
+              album: "",
+              url: "https://rabitzsongs.cf/Vzar - The Headzmen Ft. Kel Cypha, Dijaycinch, Loudspeeka, Rymboxx, DIA & IBI.mp3",
+              cover_art_url: "/images/headzmen.jpeg",
+            },
+            {
+              id: 2,
+              title: "Kyan Yanji",
+              artist: "Vzar",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/KayanYaji.mp3",
+              cover_art_url: "/images/vzarablum.jpeg",
+            },
+            {
+              id: 3,
+              title: "Decree",
+              artist: "Vzar",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/Decree.mp3",
+              cover_art_url: "/images/vzpoe.jpeg",
             },
           ],
           labelimg:
             "https://pbs.twimg.com/profile_images/1512160454906454017/Yi9KBuXK_400x400.jpg",
         },
         {
-          id: 3,
-          name: "Rema",
+          id: 5,
+          name: "DJ CINCH",
           position: "Lagos, Nigeria",
           desc: "Divine Ikubor was born into a Christian family in Benin City, Nigeria. He grew up singing and rapping while he was in secondary school. He attained his primary and secondary school education in ighile group of school, Edo State.",
-          longerDesc: `In 2018, Rema posted a viral freestyle on Instagram to D'Prince's track "Gucci Gang". The post caught the attention of D'Prince who flew him to Lagos to offer a record deal to the young talent.[8][9] Rema signed a record deal with D'Prince's Jonzing World, a subsidiary of Mavin Records, in 2019.[11] He went on to release his self-titled debut EP Rema in 2019, which peaked at number 1 on Apple Music Nigeria.[12][13] On 21 May 2019, Jonzing World, and Mavin's released the music video of "Dumebi", a major breakout song from his self-titled EP, featuring a cameo appearance from Diana Eneje. The video was directed by Ademola Falomo and currently has 50 million views on YouTube. In May 2021, Rema announced he will be calling his sound "Afrorave", a subgenre of Afrobeats with influences of Arabian and Indian music which has led to him having one of the strongest fanbase in the country known as Ravers .In September 2021 Rema was unveiled as a brand ambassador for the popular soft drink Pepsi alonsgide his label mate Ayra Starr.`,
+          longerDesc: `Fumen John Naye popularly Known as Dj Cinch is a multiple Award Winning Recording and performing Arewa Hip-hop Artiste from Kaduna state Northern Nigeria, Started his Music career over a decade ago in Zaria before relocating to Kaduna, became popular in Kaduna and northern Nigeria after releasing a Hausa cover of Olamide popular hit song Wo in the year 2017, since then he has performed in Some of the the biggest music festivals and events such as Afro Politan vibes Music festival 2018 in Lagos, Jos Chilling, Hip Samba, UBA Bank Leo Campus Tour, etc, he has also shared the the stage with Nigerian greats like Davido, Burna Boy, MI Abaga, Ice Prince, Runtown, Jesse Jagz etc. Among his popular tracks are Saminaka, Wanka, That Hausa Rapper ft Boc, Chigaba Da gashi, Muna Waje etc, his newest 2022 single Ina So is already doing well on all the major music digital platforms. He was also featured on legendary Rugged Man's recent project ( The Situation Ep) on the song One Love (wazobia) Dj Cinch is also Graduate of Kaduna state University with B.A from The Department of English and Drama. His also a record producer, Song Writer and audio engineer. Follow him @dijaycinch on all social media platforms.`,
           label: "Mavin Studios",
-          img: "/images/rema.png",
+          img: "/images/djfinch.jpg",
           track: [
             {
-              id: 2,
-              title: "Wow",
-              artist: "Post Malone",
+              id: 1,
+              title: "That hausa rapper",
+              artist: "DJ CINCH",
               album: "",
-              url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
-              cover_art_url:
-                "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884701/audio/album%20arts/s-l300.jpg",
+              url: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
+              cover_art_url: "/images/thath.jpeg",
             },
             {
               id: 2,
-              title: "Wow",
-              artist: "Post Malone",
+              title: "Muna Waje",
+              artist: "DJ CINCH",
               album: "",
-              url: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
-              cover_art_url:
-                "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884701/audio/album%20arts/s-l300.jpg",
+              url: "https://rabitzsongs.cf/songs/Muna-Waje-KrockcityDegreez.com.mp3",
+              cover_art_url: "/images/munawaje.jpeg",
+            },
+            {
+              id: 3,
+              title: "Arewa highway",
+              artist: "DJ CINCH",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/DjCinch-ArewaHighway.mp3",
+              cover_art_url: "/images/inaso.jpeg",
             },
           ],
           labelimg:
@@ -1596,84 +1770,124 @@ export default {
         },
 
         {
-          id: 4,
-          name: "Fireboy DML",
+          id: 6,
+          name: "Ibi",
           position: "Lagos, Nigeria",
           desc: `Fireboy DML grew up in Abeokuta, Ogun state and was a member of his local church choir.[3] He developed interest in music while studying at Obafemi Awolowo University.`,
-          longerDesc: `His breakthrough single "Jealous" first appeared on YBNL Nation's collaborative album YBNL Mafia Family (2018), before being re-released on 25 March 2019. The song is composed of guitar riffs, traditional drums and percussion; it combines African harmonies with elements of country and soul music. "Jealous" was produced by Cracker Mallo and is centered around love and the complicated feelings that go along with it. The visuals for "Jealous" was directed by Director K. On 14 June 2019, Fireboy DML released the romantic single "What If I Say". It was produced by Pheelz, who incorporated a mix of percussion, ambient synth harmonies, and a drum riff into the production. The visuals for "What If I Say" was directed by TG Omori. On 1 August 2019, Fireboy DML released another single "King", in the song, he declares his worth to his love interest. The accompanying music video for "King" was directed by TG Omori; it contains images of Fireboy and his love interest in a rose petal embellished Rolls Royce, as well as images of him singing at a fashion show where models walk on a runway.
-`,
+          longerDesc: `Ibrahim Iliya, better known by his stage name IBI, is a prominent Northern Nigerian Hip hop Artist, Born and Raised in the town of Kaduna state in the Northern part of Nigeria. He did part of his studies in Nigeria and traveled to Malaysia to pursue his degree program in Architectural Technology which he finished and had his bachelor certificate in Architecture....in Malaysia IBI did music, fashion and marketing strongly and came out as the winner of the hip hop category of African Entertainment Awards Malaysia 2014. IBI is super talented as a rapper and also he has the capability to switch things up from indigenous Nigerian afrobeat-oriented songs, urban high life, and a little bit of RNB. He has performed in so many concerts/Shows around the world from Malaysia, Thailand, Iran, Singapore and Nigeria. He is the man behind the trending song ‘Alhamdulillah” that is popular in almost every corner in the city of Kaduna. Apart from the IBI is a public speaker that recently had the chance to speak in Ted show Nigeria. He is currently the CEO of a well known brand in Kaduna state "Zanfada" which is all about business solution and also have the fashion part of it. IBI is a motivated, smart at work and achieving positive result and He is Good in the usage of computer related software's such as Ms Word, Excel, Internet etc, IBI is a good team player and versatile an adapting to new change.`,
           label: "YBNL Nation",
-          img: "/images/fireboy.png",
+          img: "/images/ibi.jpeg",
           track: [
             {
               id: 1,
-              name: "Random Song",
-              song: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
+              title: "Dark shades",
+              artist: "Ibi",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/IBI-Darkshades.mp3",
+              cover_art_url: "/images/darkshades.jpeg",
             },
             {
               id: 2,
-              name: "Hausa Rapper",
-              song: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
+              title: "Jokers",
+              artist: "Ibi",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/IBI-Jokers.mp3",
+              cover_art_url: "/images/jokers.jpeg",
+            },
+            {
+              id: 3,
+              title: "The End",
+              artist: "Ibi",
+              album: "",
+              url: "https://rabitzsongs.cf/songs/IBI-TheEndLIVE.mp3",
+              cover_art_url: "/images/good.jpeg",
             },
           ],
           labelimg:
             "https://geo-media.beatsource.com/image_size/500x500/1/3/1/13192354-3472-421c-a300-9e163e7542fd.jpg",
         },
+      ],
+      foreignmusicstarsData: [
+        {
+          id: 1,
+          name: "Wizkid",
+          position: "Lagos, Nigeria",
 
+          desc: "Ayodeji Ibrahim Balogun (born 16 July 1990), known professionally as Wizkid,[3] is a Nigerian singer and songwriter. He began recording music at the age of 11 and released a collaborative album with the Glorious Five (5), a group he and a couple of his church friends formed. In 2009, Wizkid signed a record deal with Banky W's Empire Mates Entertainment (E.M.E).",
+          longerDesc: `Ayodeji Ibrahim Balogun (born 16 July 1990), known professionally as Wizkid,[3] is a Nigerian singer and songwriter. He began recording music at the age of 11 and released a collaborative album with the Glorious Five (5), a group he and a couple of his church friends formed. In 2009, Wizkid signed a record deal with Banky W's Empire Mates Entertainment (E.M.E). He later rose to the limelight after releasing "Holla at Your Boy", the lead single from his debut studio album, Superstar (2011), which also spawned the singles "Tease Me/Bad Guys" and "Don't Dull". In September 2014, he released the self-titled second studio album, Ayo. The album was supported by six singles, including the song "Jaiye Jaiye". Wizkid left E.M.E after his contract expired. In 2016, Wizkid achieved international recognition following his collaboration with Drake on the hit single "One Dance", which reached number-one on the US Billboard Hot 100, and topped the charts in 14 additional countries. The song broke multiple records, making Wizkid the first Afrobeats artist to appear in the Guinness World Records.[4] In March 2017, he signed a multi-album deal with RCA Records; and released his third studio album Sounds from the Other Side, later that year. The album was supported by five singles, including "Come Closer" featuring Drake.`,
+          state: "Ile de France",
+          img: "/images/wiz.jpeg",
+          previous:
+            "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
+        },
+        {
+          id: 2,
+          name: "Burna Boy",
+          position: "Lagos, Nigeria",
+
+          desc: "Damini Ebunoluwa Ogulu (born 2 July 1991), known professionally as Burna Boy, is a Nigerian singer, songwriter and performing artist He rose to stardom in 2012 after releasing 'Like to Party', the lead single from his debut studio album L.I.F.E (2013). In 2017, Burna Boy signed with Bad Habit/Atlantic Records in the United States and Warner Music Group internationally.",
+          longerDesc:
+            "Damini Ebunoluwa Ogulu (born 2 July 1991), known professionally as Burna Boy, is a Nigerian singer, songwriter and performing artist He rose to stardom in 2012 after releasing 'Like to Party', the lead single from his debut studio album L.I.F.E (2013). In 2017, Burna Boy signed with Bad Habit/Atlantic Records in the United States and Warner Music Group internationally. His third studio album Outside marked his major-label debut.[5] In 2019, he won Best International Act at the 2019 BET Awards, and was announced as an Apple Music Up Next artist. His fourth studio album African Giant was released in July 2019; it won Album of the Year at the 2019 All Africa Music Awards and was nominated for a Best World Music Album at the 62nd Annual Grammy Awards. He was awarded the African Artist of the year at the 2020 VGMA's. In 2020, his album Twice as Tall was nominated for the same category at the 63rd Annual Grammy Awards, making him the first Nigerian with back-to-back nominations at the Grammys. In 2021, Twice as Tall won the Best World Music Album at the 63rd Annual Grammy Awards.",
+          state: "Ile de France",
+          img: "/images/burna.jpeg",
+          previous:
+            "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
+        },
+        {
+          id: 3,
+          name: "Davido",
+          position: "Lagos, Nigeria",
+
+          desc: `David Adedeji Adeleke (born November 21, 1992), popularly known as Davido, is a Nigerian singer, songwriter, and record producer. Davido blends traditional African elements with global mainstream pop Davido won the Next Rated award in 2012 at The Headies after releasing "Dami Duro", the second single from his debut studio album Omo Baba Olowo(2012).`,
+          longerDesc: `David Adedeji Adeleke (born November 21, 1992), popularly known as Davido, is a Nigerian singer, songwriter, and record producer. Davido blends traditional African elements with global mainstream pop Davido won the Next Rated award in 2012 at The Headies after releasing "Dami Duro", the second single from his debut studio album Omo Baba Olowo(2012). Between 2013 and 2015, he released a number of hit singles, and in January 2016, he signed a record deal with Sony Music. He then founded the record label Davido Music Worldwide (DMW), to which acts Dremo, Mayorkun, Peruzzi and Liya have been signed. In July 2016, Davido signed a record deal with Sony's RCA Records. In October 2016, he released the 5-track EP Son of Mercy, which was supported by the singles "Gbagbe Oshi", "How Long" and "Coolest Kid in Africa". In April 2017, Davido re-negotiated his contract with Sony due to creative control issues and later that year he released five singles including "If" and "Fall".[6] "If" generated worldwide social media activity while "Fall" became the longest-charting Nigerian pop song in Billboard history.[6][7] Davido has been famously referred to as 'The king of modern-day afrobeats'.`,
+          state: "Ile de France",
+          img: "/images/davido.jpeg",
+          previous:
+            "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
+        },
+        {
+          id: 4,
+          name: "Kizz Daniel",
+          position: "Lagos, Nigeria",
+
+          desc: `Oluwatobiloba Daniel Anidugbe, better known by his stage name Kizz Daniel, is a Nigerian singer and songwriter. He is best known for his singles "Woju" and "Yeba". He went by the stage name Kiss Daniel prior to changing it in May 2018. He signed a record deal with G-Worldwide Entertainment in 2013, but left the label following a publicized contract dispute and court case.[5]He founded the Fly Boy Inc record label in November 2017.`,
+          longerDesc: `Oluwatobiloba Daniel Anidugbe, better known by his stage name Kizz Daniel, is a Nigerian singer and songwriter. He is best known for his singles "Woju" and "Yeba". He went by the stage name Kiss Daniel prior to changing it in May 2018. He signed a record deal with G-Worldwide Entertainment in 2013, but left the label following a publicized contract dispute and court case.[5]He founded the Fly Boy Inc record label in November 2017.`,
+          state: "Ile de France",
+          img: "/images/kizz.jpeg",
+          previous:
+            "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
+        },
         {
           id: 5,
-          name: "Frank Edwards",
+          name: "Rema",
           position: "Lagos, Nigeria",
-          desc: `Frank Ugochukwu Edwards (born 22 July 1989) is a Nigerian afro-highlife praise and worship singer and songwriter from Enugu State.[1] He is the founder and owner of the record label Rocktown Records, which is home to recording artists such as Edwards himself, Gil, Divine, King BAS, Nkay, David, Dudu and Micah Heavens, among others. `,
-          longerDesc: `Frank Edwards was born into a family of seven. His birth name is Frank Ugochukwu Edwards. He was born in Enugu state of Nigeria. He has five siblings. He began singing at the age of ten. He learned to play the piano from his father when he was young. In his teenage years, he became a born again Christian. He has six albums and many hit singles to his name. He has established himself as one of the best leading gospel artiste in Nigeria. Mr. Edwards is a producer and plays several musical instruments. He is a notable keyboardist and a member of the Presidential band of Pastor Chris Oyakhilome of Christ Embassy Church. His debut album The Definition was released in 2008. It was a 14-track album and was distributed by Honesty Music.[2] His second album Angels on the Runway was released in 2010, and his third album Unlimited was released in 2011. Tagjam was released in November 2011.In 2013 he appeared in the live performance of Sinach's "I know who I am" video. He is known for his high pitched voice. Besides being an artist with many songs that cover a variety of musical genres, he is also a music producer and a master mixer. As a result, Rocktown Records, which he owns, has a generation of upcoming talents including Gil Joe, King BAS, Divine, Nkay, Soltune, David and others.[3][4] In 2016, he collaborated with famous American gospel artiste, Don Moen on an album "Grace" His Album was produced in 2016Frankincense.[1] In 2018, he released an album for the Body of Christ titled "Spiritual Music Season" which includes songs like "Miyeruwe" (I Praise your Name), "You are Good", "Who dey run things" & "Praise Your Name". Still in 2018, he has collaborated with Nathaniel Bassey (Thy Will Be Done) and Jeanine Zoe (I'm in Love with You).`,
-          label: "Rocktown Music",
-          track: [
-            {
-              id: 1,
-              name: "Random Song",
-              song: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
-            },
-            {
-              id: 2,
-              name: "Hausa Rapper",
-              song: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
-            },
-          ],
-          img: "/images/frank.png",
-          labelimg:
-            "https://gospelminds.com/wp-content/uploads/2017/10/Frank-Edwards-1.png",
-        },
 
+          desc: `Divine Ikubor (born 1 May 2000),[1] popularly known by his stage name Rema, is a Nigerian singer and rapper. He rose to stardom with the release of the song "Iron Man", which appeared on Barack Obama's 2019 summer playlist.[3] In 2019, he signed a record deal with Jonzing World, a subsidiary of Mavin Records.`,
+          longerDesc: ` Divine Ikubor (born 1 May 2000),[1] popularly known by his stage name Rema, is a Nigerian singer and rapper. He rose to stardom with the release of the song "Iron Man", which appeared on Barack Obama's 2019 summer playlist.[3] In 2019, he signed a record deal with Jonzing World, a subsidiary of Mavin Records.`,
+          state: "Ile de France",
+          img: "/images/rema.jpeg",
+          previous:
+            "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
+        },
         {
           id: 6,
-          name: "Ada Ehi",
-
+          name: "Asake",
           position: "Lagos, Nigeria",
-          desc: "Ada Ogochukwu Ehi (born 18 September 1987), simply known by her stage name Ada Ehi, is a Nigerian gospel singer, songwriter, recording and performing artist.[2] She started her musical career at the age of 10 as a backup singer for child star Tosin Jegede. ",
-          longerDesc: `Ada Ogochukwu Ehi (born 18 September 1987), simply known by her stage name Ada Ehi, is a Nigerian gospel singer, songwriter, recording and performing artist.[2] She started her musical career at the age of 10 as a backup singer for child star Tosin Jegede. Since she professionally started her music career under Loveworld Records in 2009, she has increasingly gained local and international popularity through her songs and music videos. Born to Victor and Mabel Ndukauba, Ehi and her three brothers grew up listening to gospel music. She is a native of Imo State in Nigeria.[5] At 10, she was selected to be a member of the Girls band of Nigerian child star Tosin Jegede. She is a graduate of the Lagos State University, (B.Sc Chemical & Polymer Engineering). During her university days, she actively participated in the Believers Loveworld Campus Fellowship.[6] Shortly, she joined the Christ Embassy Choir and ever since then has been active in the church choir. Ehi joined Loveworld Records in 2009. She met her husband, Moses Ehi, at Christ Embassy church during one of her rehearsal sessions while still in the university. They married in 2008 and the couple have two children.`,
-          label: "Loveword Records",
-          img: "/images/ada.png",
-          track: [
-            {
-              id: 1,
-              name: "Random Song",
-              song: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
-            },
-            {
-              id: 2,
-              name: "Hausa Rapper",
-              song: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
-            },
-          ],
-          labelimg:
-            "https://christembassy.org/wp-content/uploads/2019/01/lmam.png",
+          desc: "Asake, otherwise known as MR MONEY is an Afropop and Afrobeat musician from Nigeria. He was born Ahmed Ololade, in the late 1990s and brought up by Yoruba parents in Lagos, Nigeria. He is a singer and songwriter.",
+          longerDesc:
+            "Asake, otherwise known as MR MONEY is an Afropop and Afrobeat musician from Nigeria. He was born Ahmed Ololade, in the late 1990s and brought up by Yoruba parents in Lagos, Nigeria. He is a singer and songwriter.",
+          state: "Ile de France",
+          img: "/images/asake.jpeg",
+          previous:
+            "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
         },
       ],
       moviestarsData: [
         {
           id: 1,
           name: "Funke Akindele",
-          position: "position",
+          position: "Lagos, Nigeria",
+
           desc: "Akindele-Bello Olufunke Ayotunde born (24 August 1977)[2][3] popularly known, as Funke Akindele or Jenifa[4] is a Nigerian film actress[5] and producer.[6] Akindele starred in the sitcom I Need to Know from 1998 to 2002, and in 2009, she won the Africa Movie Academy Award for Best Actress in a Leading Role.",
           longerDesc:
             "Akindele-Bello Olufunke Ayotunde born (24 August 1977) popularly known, as Funke Akindele or Jenifa[4] is a Nigerian film actress and producer. Akindele starred in the sitcom I Need to Know from 1998 to 2002, and in 2009, she won the Africa Movie Academy Award for Best Actress in a Leading Role. Akindele was born on August 24, 1977, in Ikorodu, Lagos State, Nigeria. She is the second of three children (two girls and one boy). Her mother is a medical doctor while her father is a retired school principal. She attended Grace Children School Gbagada, Lagos State. She obtained an Ordinary National Diploma (OND) in Mass Communication from the former Ogun State Polytechnic, now known as Moshood Abiola Polytechnic. She earned a Law degree from the University of Lagos",
@@ -1758,7 +1972,7 @@ export default {
           longerDesc:
             "Ayissi is the son of Jean-Baptiste Ayissi Ntsama, a champion boxer, and Julienne Honorine Eyenga Ayissi, the first crowned Miss Cameroon after the country gained independence in 1960. His brothers and sisters are dancers and singers. During his childhood, he was a member of the Ballet National du Cameroun. He toured with Patrick Dupont and other singers and choreographers. He moved to France in the 1990s and worked as a model for Dior, Givenchy, and Lanvin. Ayissi founded his own label in 2004. His designs have been worn by Zendaya and Angela Bassett.He is a guest member of the Chambre Syndicale de la Haute Couture. He is the first black African designer to have his designs shown on the Paris haute couture catwalk. Only two other African designers have shown at the Paris show: Alphadi (Nigeria) in 2004 and Noureddine Amir (Morocco) in 2018.",
           state: "Ile de France",
-          img: "https://hautefashionafrica.com/wp-content/uploads/2019/11/e19.jpeg",
+          img: "/images/ayi.jpeg",
           previous:
             "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157686/previous_company_logo-a7152901e4945b193313d5a80f9ff0d0.svg",
         },
@@ -1770,7 +1984,7 @@ export default {
           desc: `Lisa Folawiyo has a background in law, which she studied at the University of Lagos. Lisa Folawiyo started her label "Jewel by Lisa" in 2005 from her home, with an initial investment of 20,000 Naira. She bought 12 yards of fabric and made the first pieces with her mother. She has showrooms in Nigeria and in New York. She incorporates traditional West African textiles such as Ankara with modern tailoring techniques and an emphasis on beading and sequin trim. Senegalese-American actress Issa Rae has worn her clothing.[5] In 2012 she was featured in Vogue Italia`,
           longerDesc: `Nigerian fashion designer Lisa Folawiyo is celebrated for her colourful collections that fuse traditional West African fabrics with modern tailoring and beaded embellishments. Since starting her label in 2005, Folawiyo has spearheaded the movement of Nigerian designers achieving international recognition for their work. She has a knack for elevating traditional African prints above the status quo, making them relevant for a global audience. She has showrooms in both Nigeria and New York and her collections are stocked in the UK, the US, South Africa and Nigeria itself. In 2012, Folawiyo won the African Fashion Awards, nominated alongside Maki Oh and Kofi Ansah, two more prolific designers from the Nigerian fashion scene. Championed by Vogue Italia, Folawiyo has also partnered with L’Oréal and done a trunk show on Moda Operandi. Her line is stocked in Selfridges. The Lisa Folawiyo brand has shown collections on international platforms in Lagos, Johannesburg, London, Paris, Milan and New York, as well as been featured in publications such as international editions of Vogue, The New York Times, Harper’s Bazaar and Elle. The brand counts with various diffusion lines including The J Label and Pretty Precious. Having originally trained as a lawyer, Folawiyo came to fashion with no formal training. She founded her own line, Lisa Folawiyo — previously known as Jewel by Lisa — in 2005. Her collections are exclusively crafted from Ankara textiles; vibrant wax-resistant dyed fabrics characteristic of West Africa. “Our mothers, grandmothers and probably great-grandmothers have worn this fabric,” Folawiyo told the BBC. Her garments are embellished with beads, sequins and crystals all sewn by hand in local workshops in Nigeria. She attributes her success to finding and sticking to this unusual aesthetic.`,
           state: "Ile de France",
-          img: "https://ecowarriorprincess.net/wp-content/uploads/2018/02/Lisa-Folawiyo-AW17-Ethical-Fashion-Africa.jpeg",
+          img: "/images/wiyo.jpeg",
           previous:
             "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157722/previous_company_logo-a2e4bba7a9d3357f6581c2ad6e72f0a1.svg",
         },
@@ -1782,7 +1996,7 @@ export default {
           desc: "Katungulu Mwendwa the brand was started by the Kenyan born and raised designer Katungulu Mwendwa herself. It is a Made in Kenya brand, designing for a woman who wants modern, functional, considered design. Katungulu Mwendwa designs timeless, stylish casual, work and formal wear that extends beyond any season. The brand experiments with modern techniques, innovative fabrics and traditional methods.",
           longerDesc: `Katungulu Mwendwa the brand was started by the Kenyan born and raised designer Katungulu Mwendwa herself. It is a Made in Kenya brand, designing for a woman who wants modern, functional, considered design. Katungulu Mwendwa designs timeless, stylish casual, work and formal wear that extends beyond any season. The brand experiments with modern techniques, innovative fabrics and traditional methods. The Katungulu Mwendwa goal is to create quality design considered clothing by working solely with fine materials and paying close attention to detail for each item. Borrowing cues from traditional African cultures across the continent, subtle nuances are reflected through her work.`,
           state: "Ile de France",
-          img: "https://www.bellanaijastyle.com/wp-content/uploads/2019/10/bellanaija-style-lagos-fashion-week-2019-katush-5.png",
+          img: "/images/katun.jpeg",
           previous:
             "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157725/previous_company_logo-17438ec79d6a39372fb9f661b31a2322.svg",
         },
@@ -1822,7 +2036,7 @@ export default {
           desc: "Loza Maléombho is an Ivorian American fashion designer. She was raised between Abidjan, Côte d'Ivoire (West Africa) and Silver Spring, Maryland (US). At age 13 she found interest in fashion while designing for her mother her aunts and her own school uniforms",
           longerDesc: `Loza Maléombho is an Ivorian American fashion designer. She was raised between Abidjan, Côte d'Ivoire (West Africa) and Silver Spring, Maryland (US). At age 13 she found interest in fashion while designing for her mother her aunts and her own school uniforms. In 2006 she graduated with a BFA in animation at the University of the Arts, Philadelphia. In order to gain further experience in fashion, she then moved to New York City, where she interned for designers Jill Stuart, Yigal Azrouël and Cynthia Rowley. In 2009 she launched her self-titled label.`,
           state: "Ile de France",
-          img: "https://www.bellanaija.com/wp-content/uploads/2019/04/REZE0804.jpg",
+          img: "/images/loza.jpeg",
           previous:
             "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157722/previous_company_logo-a2e4bba7a9d3357f6581c2ad6e72f0a1.svg",
         },
@@ -1914,7 +2128,7 @@ export default {
           name: "Rabitz Studio Live",
           small: "The Rabitz world",
           smallerText: "We are creating a brave new world",
-          youtube: "https://www.youtube.com/embed/k3_tw44QsZQ?rel=0",
+          youtube: "https://www.youtube.com/embed/ZuvYFC1f93A",
           img: "/images/aud1.jpeg",
         },
         {
@@ -1923,7 +2137,7 @@ export default {
           small: "Top trending music",
           smallerText:
             "The NaijaMusic Trending 100 ranks the songs that are seeing the greatest gains in popularity daily, measured by pageviews growth.",
-          youtube: "https://www.youtube.com/embed/umCuLoPZn6c",
+          youtube: "https://www.youtube.com/embed/4lPZlJ5fZZ8",
           img: "/images/eve13.jpg",
         },
         {
@@ -1932,7 +2146,7 @@ export default {
           small: "Top trending Artises",
           smallerText:
             " As 2022 continues, We and other music giants like Billboard, Spotify, Apple Music, iHeartRadio and more are releasing their lists for the most-listened and best-selling songs and albums of the year, and acts like BTS, Dua Lipa, Ariana Grande and Olivia Rodrigo have the lead on several charts—here’s a rundown of the most popular music this year",
-          youtube: "https://www.youtube.com/embed/k3_tw44QsZQ?rel=0",
+          youtube: "https://www.youtube.com/embed/MwA1mHV8JpY",
           img: "/images/eve14.jpg",
         },
 
@@ -1942,8 +2156,8 @@ export default {
           small: "Top Movies",
           smallerText:
             "Enjoy top quality and scintilating movie productions from Rabitz Studios ",
-          youtube: "https://www.youtube.com/embed/k3_tw44QsZQ?rel=0",
-          img: "https://ocdn.eu/images/pulscms/ZWE7MDA_/8f45ad6c228094c5cd1b6195eb91a044.jpg",
+          youtube: "https://www.youtube.com/embed/B3LaTxwXNhY",
+          img: "/images/topmovie.jpeg",
         },
         {
           id: 5,
@@ -1951,7 +2165,7 @@ export default {
           small: "Enjoy very scintilating Fashion Shows ",
           smallerText:
             "From supermodels to stylists, Rabitz Studios Live brings you very seasoned fashion shows from around the world as fashion insiders explain what it means to have the Fashion Week runway reflect real life.",
-          youtube: "https://www.youtube.com/embed/k3_tw44QsZQ?rel=0",
+          youtube: "https://www.youtube.com/embed/P_u_mT3dT2w",
           img: "/images/kanga1.jpg",
         },
       ],
@@ -2507,7 +2721,9 @@ export default {
 }
 
 .vision {
-  background: black;
+  /* background: black; */
+  background: url("/images/bg.png") center center/cover no-repeat !important;
+
   padding: 3rem 0;
 }
 

@@ -61,9 +61,13 @@
               <div class="big__logo">
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
-              <h1 data-testid="hero-title" class="_2trwDkHI">
-                Rabitz Studios Events
-              </h1>
+              <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
+              <small
+                data-testid="hero-title"
+                class="text-primary q-mb-sm text-h5 text-weight-bold"
+              >
+                Partnership
+              </small>
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 At Rabitz Studios, excellence is a keyword. <br />
@@ -74,21 +78,6 @@
             </div>
           </q-carousel-slide>
 
-          <!-- <q-carousel-slide :name="3" img-src="/images/guts.jpg">
-            <div
-              style="height: 100%"
-              class="flex column justify-center hero__text items-start container"
-            >
-              <div class="big__logo">
-                <img class="logo__big" src="/images/logowhite.png" alt="" />
-              </div>
-              <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
-
-              <p data-testid="hero-subtitle" class="_2NDX9tRa">
-                Events We Sponsor
-              </p>
-            </div>
-          </q-carousel-slide> -->
           <q-carousel-slide :name="3" img-src="/images/eve14.jpg">
             <div
               style="height: 100%"
@@ -97,9 +86,12 @@
               <div class="big__logo">
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
-              <h1 data-testid="hero-title" class="_2trwDkHI">
-                Rabitz Studios Live
-              </h1>
+              <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
+              <small
+                data-testid="hero-title"
+                class="text-primary q-mb-sm text-h5 text-weight-bold"
+                >Culture</small
+              >
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Rabitz Studios is a creative park of exclusive African content
@@ -123,6 +115,12 @@
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
               <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
+              <small
+                data-testid="hero-title"
+                class="text-primary q-mb-sm text-h5 text-weight-bold"
+              >
+                Virtual Reality
+              </small>
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Our affinity towards tech in creativity drives us into the block
@@ -147,6 +145,11 @@
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
               <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
+              <small
+                data-testid="hero-title"
+                class="text-primary q-mb-sm text-h5 text-weight-bold"
+                >Animations</small
+              >
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Following our passion to tell the African story, we have hired,
@@ -158,7 +161,7 @@
               </p>
             </div>
           </q-carousel-slide>
-          <q-carousel-slide :name="6" img-src="/images/script.jpeg">
+          <q-carousel-slide :name="6" img-src="/images/act.jpeg">
             <div
               style="height: 100%"
               class="flex column justify-center hero__text items-end text-right container"
@@ -167,6 +170,11 @@
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
               <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
+              <small
+                data-testid="hero-title"
+                class="text-h5 q-mb-sm text-weight-bold text-primary"
+                >Cinematography</small
+              >
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Our expertise in storytelling, directing, writing, pre and post

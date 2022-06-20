@@ -216,7 +216,7 @@ export default {
           album: "",
           url: "https://rabitzsongs.cf/BocMadaki_That_Hausa_Rapper_360Hausa_Com_Ng.mp3",
           cover_art_url:
-            "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884701/audio/album%20arts/s-l300.jpg",
+            "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
         },
         {
           id: 3,
@@ -225,7 +225,7 @@ export default {
           album: "",
           url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
           cover_art_url:
-            "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884622/audio/album%20arts/a2497580059_10.jpg",
+            "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
         },
 
         {
@@ -233,27 +233,24 @@ export default {
           title: "Hamble",
           artist: "Kendrick Lamar",
           album: "",
-          url: "https://res.cloudinary.com/dmf10fesn/video/upload/v1548884988/audio/Kendrick-Lamar-HUMBLE.mp3",
-          cover_art_url:
-            "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884891/audio/album%20arts/FwqM2g6.png",
+          url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
+          cover_art_url: "/images/gojeje.jpeg",
         },
         {
           id: 5,
           title: "Chilling",
           artist: "Kwesi Arthur",
           album: "",
-          url: "https://res.cloudinary.com/dmf10fesn/video/upload/v1548887340/audio/Kwesi-Arthur-Chill-Prod-by-Dannyedtracks.mp3",
-          cover_art_url:
-            "https://res.cloudinary.com/dmf10fesn/image/upload/v1548887458/audio/album%20arts/Kwesi-Arthur-Chill-Prod.-By-Dannyedtrackswww.Ghanasongs.com_.jpg",
+          url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
+          cover_art_url: "/images/gojeje.jpeg",
         },
         {
           id: 2,
           title: "Better Now",
           artist: "Post Malone",
           album: "",
-          url: "https://res.cloudinary.com/dmf10fesn/video/upload/v1548882769/audio/Post_Malone_-_Better_Now_playvk.com.mp3",
-          cover_art_url:
-            "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884701/audio/album%20arts/s-l300.jpg",
+          url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
+          cover_art_url: "/images/gojeje.jpeg",
         },
 
         {
@@ -261,9 +258,9 @@ export default {
           title: "Dont Kill My Vibe",
           artist: "Kendrick Lamar",
           album: "",
-          url: "https://res.cloudinary.com/dmf10fesn/video/upload/v1548884972/audio/Kendrick-Lamar-Bitch-Dont-Kill-My-Vibe.mp3",
+          url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
           cover_art_url:
-            "https://res.cloudinary.com/dmf10fesn/image/upload/v1548885857/audio/album%20arts/ae8e88aa099173dbee78d904f035e459bfb69f5a.jpg",
+            "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg",
         },
       ],
 
@@ -273,12 +270,11 @@ export default {
         songs: [
           {
             id: 1,
-            title: "Wow",
-            artist: "Post Malone",
+            title: "Go Jeje",
+            artist: "Jordan Bangoji",
             album: "",
-            url: "https://res.cloudinary.com/dmf10fesn/video/upload/v1548882863/audio/Post_Malone_-_Wow._playvk.com.mp3",
-            cover_art_url:
-              "https://res.cloudinary.com/dmf10fesn/image/upload/v1548884701/audio/album%20arts/s-l300.jpg",
+            url: "https://rabitzsongs.cf/songs/GOJEJE.mp3",
+            cover_art_url: "/images/gojeje.jpeg",
           },
         ],
       },
@@ -292,8 +288,7 @@ export default {
         artist: "",
         album: "",
         url: "",
-        cover_art_url:
-          "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+        cover_art_url: "/images/gojeje.jpeg",
       },
 
       /** ui control variables*/

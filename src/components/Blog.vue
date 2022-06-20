@@ -1,5 +1,5 @@
 <template>
-  <div class="blog bg-dark">
+  <div class="blog">
     <!-- {{ blog.posterImgs[0] }} -->
     <div class="big__logo">
       <img class="logo__big" src="/images/logo2.png" alt="" />
@@ -42,11 +42,11 @@
           <img :src="blog.posterImg" alt="" />
         </template>
       </div>
-      <div class="_27W_cjOv q-my-sm">
+      <!-- <div class="_27W_cjOv q-my-sm">
         <div class="_31aQZWyI text-primary text-weight-bold">
           {{ blog.name }}
         </div>
-      </div>
+      </div> -->
       <div class="text-weight-bold text-h5 title q-my-md">
         {{ blog.title }}
       </div>
@@ -114,6 +114,7 @@ export default {
 
 .blog__card img {
   width: 100%;
+  object-position: top;
 }
 
 .images {

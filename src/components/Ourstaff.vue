@@ -39,7 +39,7 @@ export default {
             "Yomi Jemibewon is a Managing Director at CCA and brings to the role close to two decades of experience from a background in investing and management consulting. Prior to CCA, Yomi co-founded CardinalStone Partners, and led the Principal Investments Division. Before this, he was a Vice President at Avante Capital in Lagos, and a strategy consultant with Bain & Company in New York. Yomi holds an MBA from The Wharton School of the University of Pennsylvania, and a B.Sc. and M.Sc. in Electrical Engineering from Virginia Tech.",
         },
         {
-          img: "/images/ppj.jpeg",
+          img: "/images/pwa.jpeg",
           name: "Pwajok",
           position: "CEO",
           profile:
@@ -55,14 +55,14 @@ export default {
         {
           img: "/images/bilal.jpeg",
           name: "Bilal",
-          position: "Creative Director",
+          position: "Creative  Director",
           profile:
             "Yomi Jemibewon is a Managing Director at CCA and brings to the role close to two decades of experience from a background in investing and management consulting. Prior to CCA, Yomi co-founded CardinalStone Partners, and led the Principal Investments Division. Before this, he was a Vice President at Avante Capital in Lagos, and a strategy consultant with Bain & Company in New York. Yomi holds an MBA from The Wharton School of the University of Pennsylvania, and a B.Sc. and M.Sc. in Electrical Engineering from Virginia Tech.",
         },
         {
           img: "/images/cyn.jpeg",
           name: "Cynthia",
-          position: "Media Director",
+          position: "Media  Director",
           profile:
             "Yomi Jemibewon is a Managing Director at CCA and brings to the role close to two decades of experience from a background in investing and management consulting. Prior to CCA, Yomi co-founded CardinalStone Partners, and led the Principal Investments Division. Before this, he was a Vice President at Avante Capital in Lagos, and a strategy consultant with Bain & Company in New York. Yomi holds an MBA from The Wharton School of the University of Pennsylvania, and a B.Sc. and M.Sc. in Electrical Engineering from Virginia Tech.",
         },
@@ -102,11 +102,13 @@ p.desc {
   position: relative;
   /* margin: 0 auto; */
   padding: 1em 0 4em;
-  max-width: 1100px;
+  max-width: 800px;
   list-style: none;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr; */
   align-items: center;
   gap: 0.65rem;
 }
@@ -287,8 +289,25 @@ figure.effect-sadie:hover p {
 
 @media (max-width: 800px) {
   .grid figure {
-    min-width: 300px;
+    min-width: 250px;
     width: 100%;
+  }
+  .grid {
+    position: relative;
+    /* margin: 0 auto; */
+    padding: 1em 0 4em;
+    max-width: 1100px;
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 0.65rem;
+  }
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>

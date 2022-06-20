@@ -269,7 +269,7 @@
           <!-- <span class="title">Get plan</span> -->
           <div class="sec-title text-center">
             <!-- <span class="title">Get plan</span> -->
-            <h2>Rabitz Studio Sessions</h2>
+            <h2>Rabitz Studios Sessions</h2>
           </div>
         </div>
 
@@ -332,6 +332,10 @@
               </div>
               <div class="price-box">
                 <div class="title">{{ othersessions.title }}</div>
+                <small v-if="othersessions.starting_from"
+                  >"Starting from"</small
+                >
+
                 <h4 class="price">{{ othersessions.price }}</h4>
               </div>
               <ul class="features">
@@ -558,7 +562,7 @@ export default {
           id: 1,
           icon: "fas fa-paper-plane",
           title: "Masterkraft",
-          price: "₦5000000",
+          price: "₦2,000,000",
           available: [
             "Duration: 1 week",
             "Certificate of Production",
@@ -572,8 +576,8 @@ export default {
         {
           id: 2,
           icon: "fas fa-rocket",
-          title: "Young John",
-          price: "₦5000000",
+          title: "Young Willy",
+          price: "₦2,000,000",
           available: [
             "Duration: 1 week",
             "Certificate of Production",
@@ -586,8 +590,8 @@ export default {
         {
           id: 3,
           icon: "fas fa-rocket",
-          title: "Young Willy",
-          price: "₦5000000",
+          title: "Blaiz Beats(OBAH)",
+          price: "₦2,000,000",
           notAvailable: [
             "Conference plans",
             "Free Lunch And Coffee",
@@ -609,7 +613,7 @@ export default {
           title: "Movie SoundTracks",
           price: "₦1,500,000",
           available: [
-            "Duration:1 month",
+            "Duration: 1 month",
             "Certificate of production",
             "Album Art",
           ],
@@ -622,7 +626,20 @@ export default {
           title: "Movie Post Production(Audio)",
           price: "₦1,500,000",
           available: [
-            "Duration:1 month",
+            "Duration: 1 month",
+            "Certificate of production",
+            "Album Art",
+          ],
+          notAvailable: ["Easy Access", "Free Contacts"],
+        },
+        {
+          id: 3,
+          icon: "fas fa-rocket",
+          title: "Podcasts",
+          price: "₦1,000,000",
+          available: [
+            "Duration: 1 Week",
+            "Tracks: 10",
             "Certificate of production",
             "Album Art",
           ],
@@ -669,6 +686,7 @@ export default {
           icon: "fas fa-rocket",
           title: "Full Studio Session",
           price: "₦200,000",
+
           available: [
             "Duration: 2 Days",
             "Certificates of Productions",
@@ -697,6 +715,8 @@ export default {
           id: 3,
           icon: "fas fa-rocket",
           title: "Audio Jingles",
+
+          starting_from: "Starting from",
           price: "₦150,000",
           available: [
             "Duration: 1 Day",
@@ -711,6 +731,8 @@ export default {
           id: 4,
           icon: "fas fa-rocket",
           title: "Video Jingles",
+          starting_from: "Starting from",
+
           price: "₦150,000",
           available: [
             "Duration: 1 Day",
@@ -755,7 +777,7 @@ export default {
         {
           id: 3,
           icon: "fas fa-rocket",
-          title: "VR Projects/360 Films ",
+          title: "VR Projects",
           price: "₦1,000,000",
           available: [
             "Certificate of Production",

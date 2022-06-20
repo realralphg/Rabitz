@@ -177,6 +177,12 @@ export default {
             image7: "/images/sar8.jpeg",
             image8: "/images/saruniya6.jpg",
             image10: "/images/saruniya7.jpg",
+            image11: "/images/sary1.jpeg",
+            image12: "/images/sary2.jpeg",
+            image13: "/images/sary3.jpeg",
+            image14: "/images/sary4.jpeg",
+            image15: "/images/sary5.jpeg",
+            image16: "/images/sary6.jpeg",
           },
         },
 
@@ -346,7 +352,7 @@ export default {
             image3: "/images/buyandsell3.jpeg",
             image4: "/images/buyandsell4.jpeg",
             image5: "/images/buyandsell5.jpeg",
-            image6: "/images/buyandsell6.jpeg",
+            image6: "/images/buyandsell6.jpg",
           },
         },
 
@@ -426,6 +432,39 @@ export default {
             image4: "/images/ibi1.jpeg",
             image5: "/images/ibi5.jpeg",
             image6: "/images/ibi2.jpeg",
+          },
+        },
+        {
+          id: 11,
+          posterImg: "/images/com7.jpeg",
+          posterImgs: [
+            "/images/come1.jpeg",
+            "/images/com10.jpeg",
+            "/images/com7.jpeg",
+          ],
+          name: "Rabitz Studios",
+          title: "Rain of Comedy",
+          smallImg: "/images/aud1.jpeg",
+
+          by: "Karim",
+          smallDesc:
+            "In commemoration of Nigeria’s Independence Day Celebration. The event will feature big comedians and artists like Julius Agwu....",
+          desc: "In commemoration of Nigeria’s Independence Day Celebration. The event will feature big comedians and artists like Julius Agwu, Tony Tetuila, De Don, MC Jay, Bishop Talk, Prinz Talker, General Sugar from Gombe, Chappy from Jos, Shally white from Abuja, MC Parrot, MC Solex, Kaptain Sylva Dee, Rymbox, Cassy Vibes, DJ Cinch, Ochai Ogaba, DJ Biggy Smart, DJ White, DJ Femfad from Kaduna and a whole lot of Kaduna based Comedians and Musicians. Venue was at TFA Center Adjacent Total Filling Station, Barnawa, Kaduna",
+          images: {
+            image1: "/images/come2.jpeg",
+            image2: "/images/com2.jpeg",
+            image3: "/images/com3.jpeg",
+            image6: "/images/com7.jpeg",
+
+            image4: "/images/com4.jpeg",
+            image9: "/images/com9.jpeg",
+
+            image7: "/images/com6.jpeg",
+            image8: "/images/come3.jpeg",
+            image10: "/images/com14.jpeg",
+            image11: "/images/com10.jpeg",
+            image12: "/images/com11.jpeg",
+            image13: "/images/com12.jpeg",
           },
         },
       ],
