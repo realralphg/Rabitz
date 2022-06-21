@@ -182,6 +182,9 @@
             </div>
           </div>
         </div>
+        <div class="text-center text-primary">
+          Developed by GreySoft Technologies
+        </div>
       </div>
     </footer>
   </div>

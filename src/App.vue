@@ -2688,7 +2688,22 @@ span._13TWm89r {
   }
   ._9qc3kKnu.Una0M7xj ._1VFtEXND,
   ._9qc3kKnu.Una0M7xj ._3QI65u5h {
+    /* display: none; */
+  }
+  .music-player .player {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .pas {
+    padding: 0 0 0 0.75rem;
+  }
+  ._2_32njdU {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  ._3LOPUP7d {
+    margin-bottom: 65px !important;
   }
 }
 ._9qc3kKnu._3alamt95:hover {

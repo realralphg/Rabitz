@@ -153,6 +153,7 @@ export default {
       blogs: [
         {
           id: 1,
+          Category: "Events",
           posterImg: "/images/saruniya7.jpg",
           posterImgs: [
             "/images/sar8.jpeg",
@@ -188,6 +189,7 @@ export default {
 
         {
           id: 2,
+          Category: "Events",
           posterImg: "/images/eve14.jpg",
           posterImgs: [
             "/images/eve13.jpg",
@@ -225,6 +227,7 @@ export default {
         },
         {
           id: 3,
+          Category: "Events",
           posterImg: "/images/kanga1.jpeg",
           posterImgs: [
             "/images/kanga1.jpeg",
@@ -251,6 +254,7 @@ export default {
         },
         {
           id: 4,
+          Category: "Events",
           posterImg: "/images/gbam1.jpg",
           posterImgs: [
             "/images/gbam1.jpg",
@@ -282,6 +286,7 @@ export default {
         },
         {
           id: 5,
+          Category: "Events",
           posterImg: "/images/sambafest.jpeg",
           posterImgs: [
             "/images/sambafest1.jpeg",
@@ -292,7 +297,7 @@ export default {
           title: "HIP SAMBA FESTIVAL",
           smallImg: "/images/aud1.jpeg",
           smallDesc:
-            "Hip Samba Fest is a music, culture, arts and talent discovery...",
+            "Hip Samba Fest is a music, culture, arts and talent discovery festival held in the city of Kaduna. The event is produced by...",
 
           by: "Karim",
           desc: "Hip Samba Fest is a music, culture, arts and talent discovery festival held in the city of Kaduna. The event is produced by The Villageboi Company and has staged eight successful editions. The event features an exciting mix of live performances music, comedy, dramatics, spoken words and dance with cultural happenings, games, food, drinks, entrepreneurial activities and visual arts exhibition as side attraction. Hip Samba Fest features lineup of popular performing artist and emerging artist with great showmanship; past headliners have included Lady Donli, Dantalla & WurlD.",
@@ -308,6 +313,7 @@ export default {
 
         {
           id: 6,
+          Category: "Events",
           posterImg: "/images/foodcom2.jpg",
           name: "Nollywood",
           posterImgs: [
@@ -318,7 +324,7 @@ export default {
           title: "Ten Commandments Of Food",
           smallImg: "/images/aud1.jpeg",
           smallDesc:
-            "Ten Commandments of Food (10COF) is an initiative of Chef Ox...",
+            "Ten Commandments of Food (10COF) is an initiative of Chef Ox, that is aimed at training, empowering and certifying people of different ages",
 
           by: "Karim",
           desc: "Ten Commandments of Food (10COF) is an initiative of Chef Ox, that is aimed at training, empowering and certifying people of different ages in the art and field of culinary. Furthermore, 10COF is also a platform that provides an avenue for interaction, partnership and collaboration amongst professionals within and outside the culinary field.",
@@ -333,6 +339,7 @@ export default {
 
         {
           id: 7,
+          Category: "Events",
           posterImg: "/images/buyandsell1.jpeg",
           posterImgs: [
             "/images/buyandsell2.jpeg",
@@ -343,7 +350,7 @@ export default {
           title: "Kaduna Buy and Sell",
           by: "Karim",
           smallDesc:
-            "Kaduna Buy and Sell Is a trade event meant for entrepreneurs to showcase...",
+            "Kaduna Buy and Sell Is a trade event meant for entrepreneurs to showcase, market and sell their products and services to a bigger market ",
 
           desc: "Kaduna Buy and Sell Is a trade event meant for entrepreneurs to showcase, market and sell their products and services to a bigger market than usual. The event is titled Kaduna Buy and Sell but is not limited to Kaduna based vendors, or participants alone neither is there a division of religion, it is open to everyone to be part of because it is more like a trade fair with Games to create entertainment amongst participants.Our mission can only be achieved if you are interested in joining our efforts to support this small business owners who are doing their best to get involved in entrepreneurship no matter how small Simple events like this can stir up the long lost joy in the mind of the people and can encourage many more who are unable to create something of their own because of fear of patronage thereby forcing our entrepreneurial spirit in them and with this little effort our great nation will continue to develop gradually. it will only be a thing of pride if you contribute to affecting the life of at least an individual yet benefiting from it.",
           images: {
@@ -358,6 +365,7 @@ export default {
 
         {
           id: 8,
+          Category: "Events",
           posterImg: "/images/ibi1.jpeg",
           posterImgs: [
             "/images/ibi2.jpeg",
@@ -370,7 +378,7 @@ export default {
 
           by: "Karim",
           smallDesc:
-            "IBI Live in Concert is an annual event that delivers the best of IBI and...",
+            "IBI Live in Concert is an annual event that delivers the best of IBI and other featured comics and musicians as the event will offer a platform",
           desc: "IBI Live in Concert is an annual event that delivers the best of IBI and other featured comics and musicians as the event will offer a platform to showcase the talent that characterize his brand of music and the best of Kaduna entertainment today. The whole idea is to put Kaduna state on a global entertainment market, We do hereby request your full participation in our forthcoming event IBI LIVE IN CONCERT",
           images: {
             image1: "/images/ibi7.jpeg",
@@ -383,6 +391,7 @@ export default {
         },
         {
           id: 9,
+          Category: "Events",
           posterImg: "/images/chong1.jpg",
           posterImgs: [
             "/images/chong1.jpg",
@@ -411,6 +420,7 @@ export default {
         },
         {
           id: 10,
+          Category: "Events",
           posterImg: "/images/nerd1.jpeg",
           posterImgs: [
             "/images/nerd1.jpeg",
@@ -423,7 +433,7 @@ export default {
 
           by: "Karim",
           smallDesc:
-            "IBI Live in Concert is an annual event that delivers the best of IBI and...",
+            "IBI Live in Concert is an annual event that delivers the best of IBI and other featured comics and musicians as the event will offer a platform",
           desc: "IBI Live in Concert is an annual event that delivers the best of IBI and other featured comics and musicians as the event will offer a platform to showcase the talent that characterize his brand of music and the best of Kaduna entertainment today. The whole idea is to put Kaduna state on a global entertainment market, We do hereby request your full participation in our forthcoming event IBI LIVE IN CONCERT",
           images: {
             image1: "/images/ibi7.jpeg",
@@ -436,6 +446,7 @@ export default {
         },
         {
           id: 11,
+          Category: "Events",
           posterImg: "/images/com7.jpeg",
           posterImgs: [
             "/images/come1.jpeg",
@@ -481,7 +492,7 @@ export default {
       const setBlog = JSON.stringify(blog);
       console.log(setBlog);
       localStorage.setItem("blog", setBlog);
-      this.$router.replace("/readblog");
+      this.$router.replace("/read");
     },
   },
 };

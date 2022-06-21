@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh lpR fFf">
-    <q-header class="bg-white header text-dark flex" height-hint="98">
+    <q-header elevated class="bg-white header text-dark flex" height-hint="98">
       <q-toolbar class="q-pa-sm row justify-between container">
         <div>
           <img class="logo" src="/images/logo2.png" alt="" />
@@ -225,7 +225,7 @@ export default {
 }
 .logo {
   width: 100px;
-  height: 60px;
+  height: 47px;
   object-fit: contain;
 }
 

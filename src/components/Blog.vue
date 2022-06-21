@@ -6,6 +6,19 @@
     </div>
 
     <div class="blog__card container">
+      <q-btn
+        v-if="blog.Category === 'Events'"
+        to="/events"
+        class="btnx q-my-md"
+        icon="arrow_back"
+      ></q-btn>
+      <q-btn
+        v-if="blog.Category === 'Blog'"
+        to="/blog"
+        class="btnx q-my-md"
+        icon="arrow_back"
+      ></q-btn>
+
       <div class="posterimg">
         <template v-if="blog.posterImgs">
           <q-carousel
@@ -130,6 +143,16 @@ export default {
 }
 .images img:hover {
   transform: scale(1.1);
+}
+
+.btnx {
+  padding: 0.35rem 0.65rem;
+  color: #fff;
+  background: linear-gradient(
+    121.81deg,
+    #9d1e81 20.1%,
+    #9d1e814a 131.87%
+  ) !important;
 }
 
 @media (max-width: 700px) {

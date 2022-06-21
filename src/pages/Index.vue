@@ -1299,7 +1299,7 @@
 
           <div
             v-if="profile.track"
-            class="col-md-3 col-sm-12 col-xs-12 q-py-md container"
+            class="col-md-3 col-sm-12 pas col-xs-12 q-py-md container"
           >
             <div class="text-h4 text-weight-medium q-pl-md">Top tracks</div>
             <PlayAudios
@@ -1771,7 +1771,7 @@ export default {
 
         {
           id: 6,
-          name: "Ibi",
+          name: "IBI",
           position: "Lagos, Nigeria",
           desc: `Fireboy DML grew up in Abeokuta, Ogun state and was a member of his local church choir.[3] He developed interest in music while studying at Obafemi Awolowo University.`,
           longerDesc: `Ibrahim Iliya, better known by his stage name IBI, is a prominent Northern Nigerian Hip hop Artist, Born and Raised in the town of Kaduna state in the Northern part of Nigeria. He did part of his studies in Nigeria and traveled to Malaysia to pursue his degree program in Architectural Technology which he finished and had his bachelor certificate in Architecture....in Malaysia IBI did music, fashion and marketing strongly and came out as the winner of the hip hop category of African Entertainment Awards Malaysia 2014. IBI is super talented as a rapper and also he has the capability to switch things up from indigenous Nigerian afrobeat-oriented songs, urban high life, and a little bit of RNB. He has performed in so many concerts/Shows around the world from Malaysia, Thailand, Iran, Singapore and Nigeria. He is the man behind the trending song ‘Alhamdulillah” that is popular in almost every corner in the city of Kaduna. Apart from the IBI is a public speaker that recently had the chance to speak in Ted show Nigeria. He is currently the CEO of a well known brand in Kaduna state "Zanfada" which is all about business solution and also have the fashion part of it. IBI is a motivated, smart at work and achieving positive result and He is Good in the usage of computer related software's such as Ms Word, Excel, Internet etc, IBI is a good team player and versatile an adapting to new change.`,
@@ -1781,7 +1781,7 @@ export default {
             {
               id: 1,
               title: "Dark shades",
-              artist: "Ibi",
+              artist: "IBI",
               album: "",
               url: "https://rabitzsongs.cf/songs/IBI-Darkshades.mp3",
               cover_art_url: "/images/darkshades.jpeg",
@@ -1789,7 +1789,7 @@ export default {
             {
               id: 2,
               title: "Jokers",
-              artist: "Ibi",
+              artist: "IBI",
               album: "",
               url: "https://rabitzsongs.cf/songs/IBI-Jokers.mp3",
               cover_art_url: "/images/jokers.jpeg",
@@ -1797,7 +1797,7 @@ export default {
             {
               id: 3,
               title: "The End",
-              artist: "Ibi",
+              artist: "IBI",
               album: "",
               url: "https://rabitzsongs.cf/songs/IBI-TheEndLIVE.mp3",
               cover_art_url: "/images/good.jpeg",
@@ -2136,7 +2136,7 @@ export default {
           name: "The Rabitz world",
           small: "Top trending music",
           smallerText:
-            "The NaijaMusic Trending 100 ranks the songs that are seeing the greatest gains in popularity daily, measured by pageviews growth.",
+            "The NaijaMusic Trending 100 ranks the songs that are seeing the greatest gains in popularity daily.",
           youtube: "https://www.youtube.com/embed/4lPZlJ5fZZ8",
           img: "/images/eve13.jpg",
         },
@@ -2145,7 +2145,7 @@ export default {
           name: "The Rabitz world",
           small: "Top trending Artises",
           smallerText:
-            " As 2022 continues, We and other music giants like Billboard, Spotify, Apple Music, iHeartRadio and more are releasing their lists for the most-listened and best-selling songs and albums of the year, and acts like BTS, Dua Lipa, Ariana Grande and Olivia Rodrigo have the lead on several charts—here’s a rundown of the most popular music this year",
+            "We and other music giants like Billboard, Spotify, Apple Music, and more are releasing their lists for the most-listened.",
           youtube: "https://www.youtube.com/embed/MwA1mHV8JpY",
           img: "/images/eve14.jpg",
         },
@@ -2164,7 +2164,7 @@ export default {
           name: "The Rabitz world",
           small: "Enjoy very scintilating Fashion Shows ",
           smallerText:
-            "From supermodels to stylists, Rabitz Studios Live brings you very seasoned fashion shows from around the world as fashion insiders explain what it means to have the Fashion Week runway reflect real life.",
+            "From supermodels to stylists, Rabitz Studios Live brings you very seasoned fashion shows from around the world.",
           youtube: "https://www.youtube.com/embed/P_u_mT3dT2w",
           img: "/images/kanga1.jpg",
         },
@@ -2586,7 +2586,7 @@ export default {
       const setBlog = JSON.stringify(blog);
       console.log(setBlog);
       localStorage.setItem("blog", setBlog);
-      this.$router.replace("/readblog");
+      this.$router.replace("/read");
     },
     viewMember(star) {
       this.fixed = true;
