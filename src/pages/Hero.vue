@@ -28,9 +28,7 @@
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Rabitz Studios is a creative park of exclusive African content
-                <br />
                 driven by a network of passionate, innovative and creative minds
-                <br />
                 with a mission to re-tell the African story. We are driven by
                 culture!
               </p>
@@ -70,10 +68,9 @@
               </small>
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
-                At Rabitz Studios, excellence is a keyword. <br />
-                Hence we have identified some of the finest, brightest and
-                <br />
-                most promising brands in Northern Nigeria to partner with.
+                At Rabitz Studios, excellence is a keyword. Hence we have
+                identified some of the finest, brightest and most promising
+                brands in Northern Nigeria to partner with.
               </p>
             </div>
           </q-carousel-slide>
@@ -95,9 +92,7 @@
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Rabitz Studios is a creative park of exclusive African content
-                <br />
                 driven by a network of passionate, innovative and creative minds
-                <br />
                 with a mission to re-tell the African story. We are driven by
                 culture!
               </p>
@@ -124,24 +119,21 @@
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Our affinity towards tech in creativity drives us into the block
-                <br />
                 chain and VR space where we convert music, arts, films and other
-                creative <br />
-                contents into NFTs as well as offer VR representation of African
-                <br />
-                cultural monuments as a service.
+                creative contents into NFTs as well as offer VR representation
+                of African cultural monuments as a service.
               </p>
             </div>
           </q-carousel-slide>
           <q-carousel-slide
             :name="5"
-            img-src="https://static.dw.com/image/51784877_101.jpg"
+            img-src="https://www.unicef.org/nigeria/sites/unicef.org.nigeria/files/styles/hero_desktop/public/Lara%20and%20friends%20animation%203.png?itok=yyBdTS0q"
           >
             <div
               style="height: 100%"
               class="flex column justify-center hero__text items-start container"
             >
-              <div class="big__logo">
+              <div class="big__logo flex justify-end">
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
               <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
@@ -153,9 +145,7 @@
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Following our passion to tell the African story, we have hired,
-                <br />
                 trained and established various collaborations with industry
-                <br />
                 standard experts to produce globally competitive animation
                 projects.
               </p>
@@ -178,9 +168,7 @@
 
               <p data-testid="hero-subtitle" class="_2NDX9tRa">
                 Our expertise in storytelling, directing, writing, pre and post
-                <br />
                 production activities are unparalleled. We have the tools and
-                <br />
                 expertise to traverse traditional film making into 360 degrees
                 VR Filming.
               </p>
@@ -438,13 +426,18 @@ export default {
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 800px) {
+  ._2NDX9tRa {
+    max-width: 700px !important;
+  }
+}
+@media (max-width: 800px) {
+  .big__logo {
+    display: none;
+  }
   .glitch {
     font-size: 1.5rem;
     bottom: -2%;
-  }
-  .big__logo {
-    display: none;
   }
 }
 </style>

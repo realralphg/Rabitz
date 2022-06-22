@@ -12,14 +12,6 @@ const routes = [
       { path: '/industries', component: () => import('pages/Industries.vue') },
       { path: '/events', component: () => import('pages/Events.vue') },
       { path: '/read', component: () => import('src/pages/More.vue') },
-
-
-
-
-
-
-
-
     ]
   },
 

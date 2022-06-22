@@ -15,6 +15,7 @@
         </div>
       </section>
     </div>
+    <Topevents />
     <div data-cid="clients-2">
       <div id="case-studies">
         <div class="_3-6TRn-e _1YibmBYc _1_bvS4sL _3LOPUP7d">
@@ -125,6 +126,7 @@
 import Video from "../components/Video.vue";
 import Footer from "../components/Footer.vue";
 import Events from "../components/Events.vue";
+import Topevents from "../components/Topevents.vue";
 
 import { ref } from "vue";
 import { date } from "quasar";
@@ -134,6 +136,7 @@ export default {
     Video,
     Events,
     Footer,
+    Topevents,
   },
   setup() {
     const timeStamp = Date.now();
@@ -183,7 +186,6 @@ export default {
             image13: "/images/sary3.jpeg",
             image14: "/images/sary4.jpeg",
             image15: "/images/sary5.jpeg",
-            image16: "/images/sary6.jpeg",
           },
         },
 
@@ -433,8 +435,8 @@ export default {
 
           by: "Karim",
           smallDesc:
-            "IBI Live in Concert is an annual event that delivers the best of IBI and other featured comics and musicians as the event will offer a platform",
-          desc: "IBI Live in Concert is an annual event that delivers the best of IBI and other featured comics and musicians as the event will offer a platform to showcase the talent that characterize his brand of music and the best of Kaduna entertainment today. The whole idea is to put Kaduna state on a global entertainment market, We do hereby request your full participation in our forthcoming event IBI LIVE IN CONCERT",
+            "We are film directors, and we have the unique ability to transform written stories and ideas into visual presentations...",
+          desc: "We are film directors, and we have the unique ability to transform written stories and ideas into visual presentations, such as movies, television shows, documentaries, animations, and advertisements. Our goal is to create content that spurs emotions, captivates audiences, or prompts action.",
           images: {
             image1: "/images/ibi7.jpeg",
             image2: "/images/ibi4.jpeg",
@@ -500,7 +502,7 @@ export default {
 
 <style scoped>
 .events__hero {
-  background: url("/images/chong1.jpg") no-repeat center center/cover !important;
+  background: url("/images/eventsbg.jpeg") no-repeat center center/cover !important;
   height: 85vh;
   position: relative;
 }

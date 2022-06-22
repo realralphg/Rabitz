@@ -121,7 +121,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
   background: white;
   padding: 1.5rem;
-  width: 65%;
+  width: 75%;
   height: 100%;
 }
 
@@ -132,12 +132,12 @@ export default {
 
 .images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1rem;
   margin: 3rem 0;
 }
 .images img {
-  height: 250px;
+  height: 350px;
   object-fit: cover;
   transition: all 0.5s ease-in-out;
 }

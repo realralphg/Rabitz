@@ -299,6 +299,7 @@ figure.effect-sadie:hover p {
     max-width: 1100px;
     list-style: none;
     text-align: center;
+    width: 350px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;

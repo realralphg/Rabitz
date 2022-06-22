@@ -214,17 +214,19 @@
       </div>
     </div>
     <div id="homer" data-cid="home-2">
+      <div class="team_head text-center">
+        <h2 class="_1DAwOP3R text-primary" data-testid="usp-title">
+          The Rabitz Team
+        </h2>
+        <p class="_2-gkB2sO">
+          With our team of professionals, we get just about <br />
+          any media job done!
+        </p>
+      </div>
       <section
-        class="_2rtHMimn _1zyXkxSm _1YibmBYc _1_bvS4sL _3LOPUP7d _2_32njdU"
+        class="_2rtHMimn add_pad _1zyXkxSm _1YibmBYc _1_bvS4sL _3LOPUP7d _2_32njdU"
       >
         <div class="_2e98AqZT">
-          <h2 class="_1DAwOP3R text-primary" data-testid="usp-title">
-            The Rabitz Team
-          </h2>
-          <p class="_2-gkB2sO">
-            With our team of professionals, we get just about any media job
-            done!
-          </p>
           <div
             class="_3ATUx1NL xK1Y6wFp nSXNjloy _2hTqIJvN bMWr3Lne VRzpBOaS"
             role="list"
@@ -279,6 +281,7 @@
                 </div>
               </div>
             </div>
+
             <div class="RqckegCL _26ebzZtt _1mgQSQLr _3jgwFSUz" role="listitem">
               <div class="_1oViSdzd">
                 <!-- <i
@@ -300,7 +303,10 @@
             </div>
           </div>
         </div>
-        <div class="_1GfHJupV _1yCM0Wmf _385wrD-c wF-W6bRO">
+        <div class="team_carou">
+          <Team />
+        </div>
+        <div class="_1GfHJupV _1yCM0Wmf none_here _385wrD-c wF-W6bRO">
           <div class="xK1Y6wFp nSXNjloy _2hTqIJvN bMWr3Lne VRzpBOaS">
             <div
               v-for="teammember in team"
@@ -428,7 +434,7 @@
           mobile-arrows
           outside-arrows
         >
-          <q-tab class="text-white" name="musicstars" label="Native Stars" />
+          <q-tab class="text-white" name="musicstars" label="North Stars" />
           <q-tab
             class="text-white"
             name="foreignmusicstarsData"
@@ -457,7 +463,9 @@
                           class="_3_zJ8691 RqckegCL dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz max_width maxx_width"
                           role="listitem"
                         >
-                          <div class="_9qc3kKnu Una0M7xj dark _3alamt95">
+                          <div
+                            class="_9qc3kKnu Una0M7xj restruction restruct dark _3alamt95"
+                          >
                             <q-btn
                               @click="viewMember(star)"
                               aria-hidden="true"
@@ -535,7 +543,9 @@
                           class="_3_zJ8691 RqckegCL dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz max_width maxx_width"
                           role="listitem"
                         >
-                          <div class="_9qc3kKnu Una0M7xj dark _3alamt95">
+                          <div
+                            class="_9qc3kKnu Una0M7xj restruction restruct dark _3alamt95"
+                          >
                             <q-btn
                               @click="viewMember(star)"
                               aria-hidden="true"
@@ -593,7 +603,7 @@
             </div>
           </q-tab-panel>
           <q-tab-panel name="moviestars">
-            <div class="">
+            <div class="firstt">
               <div class="YSQ5c5aR">
                 <div>
                   <div role="tabpanel" class="EjKBP_ta sliderr DwsYntB3">
@@ -607,7 +617,9 @@
                             class="_3_zJ8691 RqckegCL max_width dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz max_width"
                             role="listitem"
                           >
-                            <div class="_9qc3kKnu dark Una0M7xj _3alamt95">
+                            <div
+                              class="_9qc3kKnu dark restruction restruct Una0M7xj _3alamt95"
+                            >
                               <q-btn
                                 @click="viewMember(star)"
                                 aria-hidden="true"
@@ -659,7 +671,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="upcoming">
-            <div class="">
+            <div class="firstt">
               <div class="YSQ5c5aR">
                 <div>
                   <div role="tabpanel" class="EjKBP_ta sliderr DwsYntB3">
@@ -673,7 +685,9 @@
                             class="_3_zJ8691 RqckegCL max_width dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz"
                             role="listitem"
                           >
-                            <div class="_9qc3kKnu Una0M7xj dark _3alamt95">
+                            <div
+                              class="_9qc3kKnu Una0M7xj restruction restruct dark _3alamt95"
+                            >
                               <q-btn
                                 @click="viewMember(star)"
                                 aria-hidden="true"
@@ -725,7 +739,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="fashion">
-            <div class="">
+            <div class="firstt">
               <div class="YSQ5c5aR">
                 <div>
                   <div role="tabpanel" class="EjKBP_ta sliderr DwsYntB3">
@@ -739,7 +753,9 @@
                             class="_3_zJ8691 RqckegCL max_width dark body__border _26ebzZtt _1ArckmJZ _3jgwFSUz"
                             role="listitem"
                           >
-                            <div class="_9qc3kKnu dark Una0M7xj _3alamt95">
+                            <div
+                              class="_9qc3kKnu dark Una0M7xj restruction restruct _3alamt95"
+                            >
                               <q-btn
                                 @click="viewMember(star)"
                                 aria-hidden="true"
@@ -892,7 +908,7 @@
                     Produce quality audio projects with some of the finest music
                     producers across the continent
                   </p>
-                  <div class="">
+                  <div class="cent">
                     <q-btn
                       to="/services"
                       size="md"
@@ -911,7 +927,7 @@
                     class="RqckegCL _2lgV_Xr9 _1ArckmJZ _3jgwFSUz"
                     role="listitem"
                   >
-                    <div class="_2vQjp_O2 k4Kjb1Dh _2aYXDjr3 _1fycIOYl">
+                    <div class="_2vQjp_O2 k4Kjb1Dh addTop _2aYXDjr3 _1fycIOYl">
                       <div class="_2ud0q49P">
                         <!-- <img
                           data-src="https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/57767/preview_square-94f699035cb3c81f5a4c26cec766ce44.jpg"
@@ -943,7 +959,7 @@
                     class="RqckegCL _2lgV_Xr9 _1ArckmJZ _3jgwFSUz"
                     role="listitem"
                   >
-                    <div class="_2vQjp_O2 k4Kjb1Dh _2aYXDjr3 _1fycIOYl">
+                    <div class="_2vQjp_O2 k4Kjb1Dh addTop _2aYXDjr3 _1fycIOYl">
                       <div class="_2ud0q49P">
                         <!-- <img
                           data-src="https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/57770/preview_square-2cb0e8184a30e7c6fead3aeee5daeba5.jpg"
@@ -977,7 +993,7 @@
                     class="RqckegCL _2lgV_Xr9 _1ArckmJZ _3jgwFSUz"
                     role="listitem"
                   >
-                    <div class="_2vQjp_O2 k4Kjb1Dh _2aYXDjr3 _1fycIOYl">
+                    <div class="_2vQjp_O2 k4Kjb1Dh addTop _2aYXDjr3 _1fycIOYl">
                       <div class="_2ud0q49P">
                         <!-- <img
                           data-src="https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/57765/preview_square-d1724b1b5d629eb9bd1664e210e3447b.jpg"
@@ -998,10 +1014,10 @@
                         /> -->
                       </div>
                       <p class="">
-                        <span class="text-weight-bold">Young John </span>
+                        <span class="text-weight-bold">Blaiz Beats </span>
                         <br />
-                        Get an opportunity to work with Young John AKA the
-                        wicked producer and produce amazing tracks...
+                        Get an opportunity to work with Blaiz Beats and produce
+                        amazing tracks...
                       </p>
                       <small>Fee:₦2,000,000</small>
                     </div>
@@ -1101,6 +1117,7 @@
         </div>
       </div>
     </div>
+    <Locations />
     <div class="_1YibmBYc _3LOPUP7d">
       <div data-cid="home-7">
         <div class="_3c0XmpYI">
@@ -1496,6 +1513,9 @@
 
 <script>
 import Hero from "./Hero.vue";
+import Team from "../components/Team.vue";
+import Locations from "../components/Locations.vue";
+
 import Video from "../components/Video.vue";
 import Footer from "../components/Footer.vue";
 import PlayAudios from "../components/PlayAudios.vue";
@@ -1518,6 +1538,8 @@ export default {
     Splide,
     SplideSlide,
     PlayAudios,
+    Locations,
+    Team,
   },
 
   data() {
@@ -1813,7 +1835,7 @@ export default {
           name: "Wizkid",
           position: "Lagos, Nigeria",
 
-          desc: "Ayodeji Ibrahim Balogun (born 16 July 1990), known professionally as Wizkid,[3] is a Nigerian singer and songwriter. He began recording music at the age of 11 and released a collaborative album with the Glorious Five (5), a group he and a couple of his church friends formed. In 2009, Wizkid signed a record deal with Banky W's Empire Mates Entertainment (E.M.E).",
+          desc: "Ayodeji Ibrahim Balogun (born 16 July 1990), known professionally as Wizkid, is a Nigerian singer and songwriter. He began recording music at the age of 11 and released a collaborative album with the Glorious Five...",
           longerDesc: `Ayodeji Ibrahim Balogun (born 16 July 1990), known professionally as Wizkid,[3] is a Nigerian singer and songwriter. He began recording music at the age of 11 and released a collaborative album with the Glorious Five (5), a group he and a couple of his church friends formed. In 2009, Wizkid signed a record deal with Banky W's Empire Mates Entertainment (E.M.E). He later rose to the limelight after releasing "Holla at Your Boy", the lead single from his debut studio album, Superstar (2011), which also spawned the singles "Tease Me/Bad Guys" and "Don't Dull". In September 2014, he released the self-titled second studio album, Ayo. The album was supported by six singles, including the song "Jaiye Jaiye". Wizkid left E.M.E after his contract expired. In 2016, Wizkid achieved international recognition following his collaboration with Drake on the hit single "One Dance", which reached number-one on the US Billboard Hot 100, and topped the charts in 14 additional countries. The song broke multiple records, making Wizkid the first Afrobeats artist to appear in the Guinness World Records.[4] In March 2017, he signed a multi-album deal with RCA Records; and released his third studio album Sounds from the Other Side, later that year. The album was supported by five singles, including "Come Closer" featuring Drake.`,
           state: "Ile de France",
           img: "/images/wiz.jpeg",
@@ -1825,7 +1847,7 @@ export default {
           name: "Burna Boy",
           position: "Lagos, Nigeria",
 
-          desc: "Damini Ebunoluwa Ogulu (born 2 July 1991), known professionally as Burna Boy, is a Nigerian singer, songwriter and performing artist He rose to stardom in 2012 after releasing 'Like to Party', the lead single from his debut studio album L.I.F.E (2013). In 2017, Burna Boy signed with Bad Habit/Atlantic Records in the United States and Warner Music Group internationally.",
+          desc: "Damini Ebunoluwa Ogulu (born 2 July 1991), known professionally as Burna Boy, is a Nigerian singer, songwriter and performing artist He rose to stardom in 2012 after releasing 'Like to Party'...",
           longerDesc:
             "Damini Ebunoluwa Ogulu (born 2 July 1991), known professionally as Burna Boy, is a Nigerian singer, songwriter and performing artist He rose to stardom in 2012 after releasing 'Like to Party', the lead single from his debut studio album L.I.F.E (2013). In 2017, Burna Boy signed with Bad Habit/Atlantic Records in the United States and Warner Music Group internationally. His third studio album Outside marked his major-label debut.[5] In 2019, he won Best International Act at the 2019 BET Awards, and was announced as an Apple Music Up Next artist. His fourth studio album African Giant was released in July 2019; it won Album of the Year at the 2019 All Africa Music Awards and was nominated for a Best World Music Album at the 62nd Annual Grammy Awards. He was awarded the African Artist of the year at the 2020 VGMA's. In 2020, his album Twice as Tall was nominated for the same category at the 63rd Annual Grammy Awards, making him the first Nigerian with back-to-back nominations at the Grammys. In 2021, Twice as Tall won the Best World Music Album at the 63rd Annual Grammy Awards.",
           state: "Ile de France",
@@ -1838,7 +1860,7 @@ export default {
           name: "Davido",
           position: "Lagos, Nigeria",
 
-          desc: `David Adedeji Adeleke (born November 21, 1992), popularly known as Davido, is a Nigerian singer, songwriter, and record producer. Davido blends traditional African elements with global mainstream pop Davido won the Next Rated award in 2012 at The Headies after releasing "Dami Duro", the second single from his debut studio album Omo Baba Olowo(2012).`,
+          desc: `David Adedeji Adeleke (born November 21, 1992), popularly known as Davido, is a Nigerian singer, songwriter, and record producer. Davido blends traditional African elements with global mainstream pop Davido won ...`,
           longerDesc: `David Adedeji Adeleke (born November 21, 1992), popularly known as Davido, is a Nigerian singer, songwriter, and record producer. Davido blends traditional African elements with global mainstream pop Davido won the Next Rated award in 2012 at The Headies after releasing "Dami Duro", the second single from his debut studio album Omo Baba Olowo(2012). Between 2013 and 2015, he released a number of hit singles, and in January 2016, he signed a record deal with Sony Music. He then founded the record label Davido Music Worldwide (DMW), to which acts Dremo, Mayorkun, Peruzzi and Liya have been signed. In July 2016, Davido signed a record deal with Sony's RCA Records. In October 2016, he released the 5-track EP Son of Mercy, which was supported by the singles "Gbagbe Oshi", "How Long" and "Coolest Kid in Africa". In April 2017, Davido re-negotiated his contract with Sony due to creative control issues and later that year he released five singles including "If" and "Fall".[6] "If" generated worldwide social media activity while "Fall" became the longest-charting Nigerian pop song in Billboard history.[6][7] Davido has been famously referred to as 'The king of modern-day afrobeats'.`,
           state: "Ile de France",
           img: "/images/davido.jpeg",
@@ -1850,7 +1872,7 @@ export default {
           name: "Kizz Daniel",
           position: "Lagos, Nigeria",
 
-          desc: `Oluwatobiloba Daniel Anidugbe, better known by his stage name Kizz Daniel, is a Nigerian singer and songwriter. He is best known for his singles "Woju" and "Yeba". He went by the stage name Kiss Daniel prior to changing it in May 2018. He signed a record deal with G-Worldwide Entertainment in 2013, but left the label following a publicized contract dispute and court case.[5]He founded the Fly Boy Inc record label in November 2017.`,
+          desc: `Oluwatobiloba Daniel Anidugbe, better known by his stage name Kizz Daniel, is a Nigerian singer and songwriter. He is best known for his singles "Woju" and "Yeba". He went by the stage name Kiss Daniel prior t...`,
           longerDesc: `Oluwatobiloba Daniel Anidugbe, better known by his stage name Kizz Daniel, is a Nigerian singer and songwriter. He is best known for his singles "Woju" and "Yeba". He went by the stage name Kiss Daniel prior to changing it in May 2018. He signed a record deal with G-Worldwide Entertainment in 2013, but left the label following a publicized contract dispute and court case.[5]He founded the Fly Boy Inc record label in November 2017.`,
           state: "Ile de France",
           img: "/images/kizz.jpeg",
@@ -1862,8 +1884,8 @@ export default {
           name: "Rema",
           position: "Lagos, Nigeria",
 
-          desc: `Divine Ikubor (born 1 May 2000),[1] popularly known by his stage name Rema, is a Nigerian singer and rapper. He rose to stardom with the release of the song "Iron Man", which appeared on Barack Obama's 2019 summer playlist.[3] In 2019, he signed a record deal with Jonzing World, a subsidiary of Mavin Records.`,
-          longerDesc: ` Divine Ikubor (born 1 May 2000),[1] popularly known by his stage name Rema, is a Nigerian singer and rapper. He rose to stardom with the release of the song "Iron Man", which appeared on Barack Obama's 2019 summer playlist.[3] In 2019, he signed a record deal with Jonzing World, a subsidiary of Mavin Records.`,
+          desc: `Divine Ikubor (born 1 May 2000),[1] popularly known by his stage name Rema, is a Nigerian singer and rapper. He rose to stardom with the release of the song "Iron Man", which appeared on Barack Obama's 2019...`,
+          longerDesc: ` Divine Ikubor (born 1 May 2000), popularly known by his stage name Rema, is a Nigerian singer and rapper. He rose to stardom with the release of the song "Iron Man", which appeared on Barack Obama's 2019 summer playlist. In 2019, he signed a record deal with Jonzing World, a subsidiary of Mavin Records.`,
           state: "Ile de France",
           img: "/images/rema.jpeg",
           previous:
@@ -1873,7 +1895,7 @@ export default {
           id: 6,
           name: "Asake",
           position: "Lagos, Nigeria",
-          desc: "Asake, otherwise known as MR MONEY is an Afropop and Afrobeat musician from Nigeria. He was born Ahmed Ololade, in the late 1990s and brought up by Yoruba parents in Lagos, Nigeria. He is a singer and songwriter.",
+          desc: "Asake, otherwise known as MR MONEY is an Afropop and Afrobeat musician from Nigeria. He was born Ahmed Ololade, in the late 1990s and brought up by Yoruba parents in Lagos, Nigeria. He is a singer...",
           longerDesc:
             "Asake, otherwise known as MR MONEY is an Afropop and Afrobeat musician from Nigeria. He was born Ahmed Ololade, in the late 1990s and brought up by Yoruba parents in Lagos, Nigeria. He is a singer and songwriter.",
           state: "Ile de France",
@@ -1888,7 +1910,7 @@ export default {
           name: "Funke Akindele",
           position: "Lagos, Nigeria",
 
-          desc: "Akindele-Bello Olufunke Ayotunde born (24 August 1977)[2][3] popularly known, as Funke Akindele or Jenifa[4] is a Nigerian film actress[5] and producer.[6] Akindele starred in the sitcom I Need to Know from 1998 to 2002, and in 2009, she won the Africa Movie Academy Award for Best Actress in a Leading Role.",
+          desc: "Akindele-Bello Olufunke Ayotunde born (24 August 1977)popularly known, as Funke Akindele or Jenifa is a Nigerian film actress[5] and producer. Akindele starred in the sitcom I Need to Know from 1998 to 2002, ...",
           longerDesc:
             "Akindele-Bello Olufunke Ayotunde born (24 August 1977) popularly known, as Funke Akindele or Jenifa[4] is a Nigerian film actress and producer. Akindele starred in the sitcom I Need to Know from 1998 to 2002, and in 2009, she won the Africa Movie Academy Award for Best Actress in a Leading Role. Akindele was born on August 24, 1977, in Ikorodu, Lagos State, Nigeria. She is the second of three children (two girls and one boy). Her mother is a medical doctor while her father is a retired school principal. She attended Grace Children School Gbagada, Lagos State. She obtained an Ordinary National Diploma (OND) in Mass Communication from the former Ogun State Polytechnic, now known as Moshood Abiola Polytechnic. She earned a Law degree from the University of Lagos",
           state: "Ile de France",
@@ -1901,7 +1923,7 @@ export default {
           name: "Ramsey Noah",
           position: "Lagos, Nigeria",
 
-          desc: `Ramsey Nouah (born Ramsey Tokunbo Nouah Jr.; December 19, 1970) is a Nigerian actor and director. He won the Africa Movie Academy Award for Best Actor in a Leading Role in 2010 for his performance in the movie "The Figurine".He made his directorial debut with the film Living in Bondage: Breaking Free in 2019 and also went on to direct Nollywood classic Rattle Snake: The Ahanna Story which is a remake of Rattlesnake (1995).`,
+          desc: `Ramsey Nouah (born Ramsey Tokunbo Nouah Jr.; December 19, 1970) is a Nigerian actor and director. He won the Africa Movie Academy Award for Best Actor in a Leading Role in 2010 for his performance in the movie ...`,
           longerDesc: `Ramsey Nouah (born Ramsey Tokunbo Nouah Jr.; December 19, 1970) is a Nigerian actor and director. He won the Africa Movie Academy Award for Best Actor in a Leading Role in 2010 for his performance in the movie "The Figurine".He made his directorial debut with the film Living in Bondage: Breaking Free in 2019 and also went on to direct Nollywood classic Rattle Snake: The Ahanna Story which is a remake of Rattlesnake (1995). Ramsey Nouah started acting in the early 90s because he needed money for his General Certificate Education (GCE).Nouah's acting career kicked off when he starred in the Nigerian TV soap opera Fortunes. He has since appeared in numerous films starring as the lead role, and has been called "Lover-Boy" for his numerous roles in romantic films.he is also considered to be one of the most sought-after actors in Nigeria. In 2015, he protected the rights to Living in Bondage: Breaking Free from Kenneth Nnebue for a possible remake to be filmed in Europe, America, and Nigeria. The news was later confirmed on Instagram, but the film appeared to be in development hell for three years. In 2018, he announced his remake had become a sequel titled Living in Bondage: Breaking Free, which was released on November 8, 2019. Nouah, who plays the new cult chief priest, makes his directorial debut, with original actors Okwonkwo, Udokwu, and Kanayo also reprising their roles. The story centres around Andy's son Nnamdi and his quest for wealth. Rapper and MBGN winner Muna Abii also stars in the sequel. In 2020, the film Living in Bondage: Breaking Free won 7 awards on the Africa Magic Viewers Choice Awards.`,
           state: "Ile de France",
           img: "https://media.premiumtimesng.com/wp-content/files/2017/01/RAMSEY-NOUAH.jpg",
@@ -1913,7 +1935,7 @@ export default {
           name: "Lupita Nyong'o",
           position: "Kenya",
 
-          desc: "Lupita Amondi Nyong'o (US: /luːˈpiːtə ˈnjɔːŋoʊ/, Kenyan English: [luˈpita ˈɲoŋo] (listen); Spanish: [luˈpita ˈɲoŋɡo]; born 1 March 1983) is a Kenyan-Mexican[2] actress. The daughter of Kenyan politician Peter Anyang' Nyong'o, she was born in Mexico City, where her father was teaching, and was raised in Kenya from the age of one.",
+          desc: "Lupita Amondi Nyong'o (US: /luːˈpiːtə ˈnjɔːŋoʊ/, Kenyan English: [luˈpita ˈɲoŋo] (listen); Spanish: [luˈpita ˈɲoŋɡo]; born 1 March 1983) is a Kenyan-Mexican[2] actress. The daughter of Kenyan politician Peter...",
           longerDesc: `Lupita Amondi Nyong'o (US: /luːˈpiːtə ˈnjɔːŋoʊ/, Kenyan English: [luˈpita ˈɲoŋo] (listen); Spanish: [luˈpita ˈɲoŋɡo]; born 1 March 1983) is a Kenyan-Mexican[2] actress. The daughter of Kenyan politician Peter Anyang' Nyong'o, she was born in Mexico City, where her father was teaching, and was raised in Kenya from the age of one. She is the recipient of several accolades, including an Academy Award, a Daytime Emmy Award, four NAACP Image Awards, and two Screen Actors Guild Awards. Additionally, she has been nominated for a Primetime Emmy Award and a Tony Award. Nyong'o attended college in the United States, earning a bachelor's degree in film and theatre studies from Hampshire College. She later began her career in Hollywood as a production assistant. In 2008, she made her acting debut with the short film East River and subsequently returned to Kenya to star in the television series Shuga (2009–2012). In 2009, she wrote, produced and directed the documentary In My Genes. She then pursued a master's degree in acting from the Yale School of Drama. Soon after her graduation, she had her first feature film role as Patsey in Steve McQueen's biographical period drama 12 Years a Slave (2013), for which she received critical acclaim and won the Academy Award for Best Supporting Actress. Nyong'o made her Broadway debut as a teenage orphan in the play Eclipsed (2015), for which she was nominated for a Tony Award for Best Actress in a Play. She went on to perform a motion capture role as Maz Kanata in the Star Wars sequel trilogy (2015–2019) and a lead voice role as Raksha in The Jungle Book (2016). Nyong'o's career progressed with her role as Nakia in the Marvel Cinematic Universe superhero film Black Panther (2018) and her starring role in Jordan Peele's critically acclaimed horror film Us (2019). Aside from acting, Nyong'o supports historic preservation. She is vocal about preventing sexual harassment, working for women's and animal rights. In 2014, she was named the most beautiful woman by People. In 2019, Nyong'o wrote a children's book named Sulwe, which became a number-one New York Times Best-Seller. That same year, Nyong'o narrated the Discovery Channel docu-series Serengeti, which earned her a Primetime Emmy Award nomination for Outstanding Narrator. In 2020, Nyong'o was named one of Africa's "50 Most Powerful Women" by Forbes.`,
           state: "Ile de France",
           img: "https://ichef.bbci.co.uk/news/976/cpsprodpb/A373/production/_106134814_lupita976.jpg",
@@ -1926,7 +1948,7 @@ export default {
           name: "Genevieve Nnaji",
           position: "Lagos, Nigeria",
 
-          desc: `Genevieve Nnaji (/ˈnɑːdʒi/;[1] born on 3 May 1979) is a Nigerian actress, producer, and director. She won the Africa Movie Academy Award for Best Actress in a Leading Role in 2005, making her the first actor to win the award. In 2011, she was honoured as a Member of the Order of the Federal Republic by the Nigerian government for her contributions to Nollywood.`,
+          desc: `Genevieve Nnaji (/ˈnɑːdʒi/;[1] born on 3 May 1979) is a Nigerian actress, producer, and director. She won the Africa Movie Academy Award for Best Actress in a Leading Role in 2005, making her the first actor to win ...`,
           longerDesc: `Genevieve Nnaji (/ˈnɑːdʒi/;[1] born on 3 May 1979) is a Nigerian actress, producer, and director. She won the Africa Movie Academy Award for Best Actress in a Leading Role in 2005, making her the first actor to win the award. In 2011, she was honoured as a Member of the Order of the Federal Republic by the Nigerian government for her contributions to Nollywood. Her directorial debut movie, Lionheart, is the first Netflix Originated from Nigeria and the first Nigerian submission for the Oscars. The movie was disqualified for having most of its dialogue in English.[10][11] After having spent decades in the movie industry, she was profiled alongside some celebrities and business executives in 2020 in two new books by publisher and Editor in Chief of Yes International! magazine, Azuh Arinze.`,
           state: "Ile de France",
           img: "https://independent.ng/wp-content/uploads/2019/01/genevieve-nnaji.jpg",
@@ -1939,7 +1961,7 @@ export default {
           name: "Kate Henshaw",
           position: "Lagos, Nigeria",
 
-          desc: `Kate Henshaw, also known as Kate Henshaw-Nuttall (born 19 July 1971), is a professional Nigerian actress. In 2008 she won the Africa Movie Academy Award for Best Actress in a Leading Role for her performance in the movie Stronger than Pain`,
+          desc: `Kate Henshaw, also known as Kate Henshaw-Nuttall (born 19 July 1971), is a professional Nigerian actress. In 2008 she won the Africa Movie Academy Award for Best Actress in a Leading Role for her performance in the ...`,
           longerDesc: `Kate Henshaw was born in Cross River State, the oldest of four children. She attended St. Mary private school in Ajele, Lagos for her primary education. Later, she was admitted to the Federal Government Girl College, Calabar for her secondary school education.[6] She spent one year at the University of Calabar studying remedial studies, and then majored in Medical Microbiology[7] at the School of Medical Lab Science afterwards, LUTH (Lagos University Teaching Hospital) in Lagos. Henshaw worked at the Bauchi State General hospital.[2] Prior to becoming an actress, Kate Henshaw worked as a model, featuring in various commercials including a print and television advert for Shield deodorant.`,
           state: "Ile de France",
           img: "https://upload.wikimedia.org/wikipedia/commons/d/db/Kate_Henshaw_at_Lawrence_Onochie_50th_birthday09_04_40_659000.jpeg",
@@ -1953,7 +1975,7 @@ export default {
 
           position: "Lagos, Nigeria",
 
-          desc: "Enyinna Nwigwe (born September 18), is a Nigerian Actor, Producer, and Creative Entrepreneur. He is best known for playing Nonso in The Wedding Party 2 and playing Tamuno in Black November. ",
+          desc: "Enyinna Nwigwe (born September 18), is a Nigerian Actor, Producer, and Creative Entrepreneur. He is best known for playing Nonso in The Wedding Party 2 and playing Tamuno in Black November... ",
           longerDesc: `Enyinna Nwigwe (born September 18), is a Nigerian Actor, Producer, and Creative Entrepreneur. He is best known for playing Nonso in The Wedding Party 2 and playing Tamuno in Black November. Nwigwe was born and raised in Ngor, Okpala, in Imo State to Nigerian parents. He studied at the University of Calabar and holds a degree in Economics. Nwigwe began his career as a print and runway model before transitioning to professional acting. His first feature was in a 2004 film, Wheel of Change after which he went on to work alongside some of the most respected producers and directors in Africa and across the globe. In 2012, he joined the cast of Black November opposite actors Kim Basinger, Vivica A. Fox, Akon, and Wyclef Jean. In 2017, he played the lead role in South African movie, All About Love which won best film Southern Africa at the AMVCAs. In 2019, Nwigwe played the role of "Obinna Omego" in the remake of Nigerian Classic, Living in Bondage: Breaking Free, and more recently, played the lead role of Nura Yusuf in Nigeria's first military-based film, Eagle Wings. Nwigwe also led a stellar cast in a soon to be released Badamasi, a biopic on the former military President of Nigeria & the most controversial on record. He got the Best Actor in a Leading Role nomination by Africa Movie Academy Awards, for his portrayal of President Ibrahim Badamasi Babangida (IBB) in the film. In recognition of his work, Nwigwe's portrait photograph by Nigerian-American photographer Iké Udé was selected to permanently be on exhibition at the Smithsonian Institution's National Museum of African Art. Situated at the National Mall of the United States capital, Washington DC. Nwigwe lives in Lagos, Nigeria. He is passionate about cooking, fitness and enjoys playing tennis. In 2015, Nwigwe was nominated for a Nollywood and African Film Critics Award, also known as the African Oscars, for Best Actor in a Supporting Role in Black November. In 2016, he was nominated for Best Supporting Actor of the Year (English) at the City People Entertainment Awards. `,
           state: "Ile de France",
           img: "https://netstorage-tuko.akamaized.net/images/7f09cd4dca5e1bd6.jpg",
@@ -1968,7 +1990,7 @@ export default {
           name: "Imane Ayissi",
           position: "Cameroon",
 
-          desc: "Ayissi is the son of Jean-Baptiste Ayissi Ntsama, a champion boxer, and Julienne Honorine Eyenga Ayissi, the first crowned Miss Cameroon after the country gained independence in 1960. His brothers and sisters are dancers and singers. During his childhood, he was a member of the Ballet National du Cameroun. He toured with Patrick Dupont and other singers and choreographers.",
+          desc: "Ayissi is the son of Jean-Baptiste Ayissi Ntsama, a champion boxer, and Julienne Honorine Eyenga Ayissi, the first crowned Miss Cameroon after the country gained independence in 1960. His brothers and sisters are...",
           longerDesc:
             "Ayissi is the son of Jean-Baptiste Ayissi Ntsama, a champion boxer, and Julienne Honorine Eyenga Ayissi, the first crowned Miss Cameroon after the country gained independence in 1960. His brothers and sisters are dancers and singers. During his childhood, he was a member of the Ballet National du Cameroun. He toured with Patrick Dupont and other singers and choreographers. He moved to France in the 1990s and worked as a model for Dior, Givenchy, and Lanvin. Ayissi founded his own label in 2004. His designs have been worn by Zendaya and Angela Bassett.He is a guest member of the Chambre Syndicale de la Haute Couture. He is the first black African designer to have his designs shown on the Paris haute couture catwalk. Only two other African designers have shown at the Paris show: Alphadi (Nigeria) in 2004 and Noureddine Amir (Morocco) in 2018.",
           state: "Ile de France",
@@ -1981,7 +2003,7 @@ export default {
           name: "Lisa Folawiyo",
           position: "Lagos, Nigeria",
 
-          desc: `Lisa Folawiyo has a background in law, which she studied at the University of Lagos. Lisa Folawiyo started her label "Jewel by Lisa" in 2005 from her home, with an initial investment of 20,000 Naira. She bought 12 yards of fabric and made the first pieces with her mother. She has showrooms in Nigeria and in New York. She incorporates traditional West African textiles such as Ankara with modern tailoring techniques and an emphasis on beading and sequin trim. Senegalese-American actress Issa Rae has worn her clothing.[5] In 2012 she was featured in Vogue Italia`,
+          desc: `Lisa Folawiyo has a background in law, which she studied at the University of Lagos. Lisa Folawiyo started her label "Jewel by Lisa" in 2005 from her home, with an initial investment of 20,000 Naira. She bought ...`,
           longerDesc: `Nigerian fashion designer Lisa Folawiyo is celebrated for her colourful collections that fuse traditional West African fabrics with modern tailoring and beaded embellishments. Since starting her label in 2005, Folawiyo has spearheaded the movement of Nigerian designers achieving international recognition for their work. She has a knack for elevating traditional African prints above the status quo, making them relevant for a global audience. She has showrooms in both Nigeria and New York and her collections are stocked in the UK, the US, South Africa and Nigeria itself. In 2012, Folawiyo won the African Fashion Awards, nominated alongside Maki Oh and Kofi Ansah, two more prolific designers from the Nigerian fashion scene. Championed by Vogue Italia, Folawiyo has also partnered with L’Oréal and done a trunk show on Moda Operandi. Her line is stocked in Selfridges. The Lisa Folawiyo brand has shown collections on international platforms in Lagos, Johannesburg, London, Paris, Milan and New York, as well as been featured in publications such as international editions of Vogue, The New York Times, Harper’s Bazaar and Elle. The brand counts with various diffusion lines including The J Label and Pretty Precious. Having originally trained as a lawyer, Folawiyo came to fashion with no formal training. She founded her own line, Lisa Folawiyo — previously known as Jewel by Lisa — in 2005. Her collections are exclusively crafted from Ankara textiles; vibrant wax-resistant dyed fabrics characteristic of West Africa. “Our mothers, grandmothers and probably great-grandmothers have worn this fabric,” Folawiyo told the BBC. Her garments are embellished with beads, sequins and crystals all sewn by hand in local workshops in Nigeria. She attributes her success to finding and sticking to this unusual aesthetic.`,
           state: "Ile de France",
           img: "/images/wiyo.jpeg",
@@ -1993,7 +2015,7 @@ export default {
           name: "Katungulu Mwendwa",
           position: "Kenya",
 
-          desc: "Katungulu Mwendwa the brand was started by the Kenyan born and raised designer Katungulu Mwendwa herself. It is a Made in Kenya brand, designing for a woman who wants modern, functional, considered design. Katungulu Mwendwa designs timeless, stylish casual, work and formal wear that extends beyond any season. The brand experiments with modern techniques, innovative fabrics and traditional methods.",
+          desc: "Katungulu Mwendwa the brand was started by the Kenyan born and raised designer Katungulu Mwendwa herself. It is a Made in Kenya brand, designing for a woman who wants modern, functional, considered design...",
           longerDesc: `Katungulu Mwendwa the brand was started by the Kenyan born and raised designer Katungulu Mwendwa herself. It is a Made in Kenya brand, designing for a woman who wants modern, functional, considered design. Katungulu Mwendwa designs timeless, stylish casual, work and formal wear that extends beyond any season. The brand experiments with modern techniques, innovative fabrics and traditional methods. The Katungulu Mwendwa goal is to create quality design considered clothing by working solely with fine materials and paying close attention to detail for each item. Borrowing cues from traditional African cultures across the continent, subtle nuances are reflected through her work.`,
           state: "Ile de France",
           img: "/images/katun.jpeg",
@@ -2006,7 +2028,7 @@ export default {
           name: "Prime Obsession",
           position: "Lagos, Nigeria",
 
-          desc: `Before Prime Obsession launched as a fashion brand in 2014, it was the name Mokoena and Mothoa chose for their shared social media presence. They began posting soon after they met as interior design students at the University of Johannesburg; the two had quickly bonded over their shared design interests and began to dress alike. `,
+          desc: `Before Prime Obsession launched as a fashion brand in 2014, it was the name Mokoena and Mothoa chose for their shared social media presence. They began posting soon after they met as interior design students at the... `,
           longerDesc: `Before Prime Obsession launched as a fashion brand in 2014, it was the name Mokoena and Mothoa chose for their shared social media presence. They began posting soon after they met as interior design students at the University of Johannesburg; the two had quickly bonded over their shared design interests and began to dress alike. They’d then snap themselves in settings ranging from industrial spaces to sprawling green lands, sporting crisp, two-piece ensembles cut in the same boxy shapes as their flat-top hairstyles. South African publications took notice, heralding them as beacons of Johannesburg’s evolving design scene. Brands took notice, too, and the duo was tapped for collaborations with the likes of Calvin Klein and Woolworths. The most impressive thing about Mokoena and Mothoa’s initial success is that they managed to project a luxury image while wearing thrifted threads. “I think people were really attracted to the way we styled our clothing,” said Mokoena. Their collection, likewise, began as a series of one-off items from local thrift stores that the women revitalized themselves. “The whole idea was about not being able to afford expensive clothing, combined with our peers and lecturers always telling us we looked great and should start something,” says Mothoa.`,
           state: "Ile de France",
           img: "https://www.africanvibes.com/wp-content/uploads/2021/02/Prime-Obsession-main-photo-credit-jeff-rikhotso.jpg",
@@ -2019,7 +2041,7 @@ export default {
           name: "Maki Oh",
           position: "Lagos, Nigeria",
 
-          desc: `Amaka Osakwe (born 1987) is a Nigerian fashion designer and creator of the African-based fashion label named Maki Oh. She has led her womanswear label since 2010 from Lagos, and it is a Nigerian-based label that is globally acknowledged. `,
+          desc: `Amaka Osakwe (born 1987) is a Nigerian fashion designer and creator of the African-based fashion label named Maki Oh. She has led her womanswear label since 2010 from Lagos, and it is a Nigerian-based label... `,
           longerDesc: `Osakwe is of the Igbo tribe. She studied at the Arts University Bournemouth where she received a BA in fashion studies. In autumn/winter 2010 she launched her label. Inspired by rural Ghana’s Dipo rites-of-passage ceremony, during which girls taking part are partially naked and ornately adorned, Osakwe has played with cloaking and ornamentation using traditional African fabrics.[3] Recently her label was discovered by the U.S. fashion scene in 2012, when she presented her designs at the New York Fashion Week. A signature of her brand is her use of a traditional Yoruba indigo-dyed textile called adire, a cultural specialty whose practice revolves around modern-day Ogun and Osun states in western Nigeria. Another is her way of combining Western silhouettes and native materials and motifs—to wit, a lace-blouse-and-pencil-skirt set appliquéd with unsettling raffia eyeballs. International stars such as singers Beyoncé and Rihanna and Hollywood actress Kerry Washington have worn outfits by the Nigerian designers. U.S. First Lady, Michelle Obama, well-known for being a style icon, wore an Amaka Osakwe-designed Maki Oh blouse during summer 2013 trip to South Africa.[6][7] Her designs also have been worn by the likes of Solange Knowles, Lady Gaga, Issa Rae, and Leelee Sobieski and by Nigerian TV presenter Eku Edewor are sold internationally through Farfetch.com, and in United States at the McMullen boutique in Oakland. Osakwe was named "Designer of the Year" by African fashion magazine ARISE. Since 2010, her work has been showcased at the Museum at the Fashion Institute of Technology, the Vitra Design Museum, and the Brighton Museum & Art Gallery.`,
           state: "Ile de France",
           img: "https://assets.vogue.com/photos/5d76f4315c88d900087598b7/16:9/pass/_PLA0003.jpg",
@@ -2033,7 +2055,7 @@ export default {
 
           position: "Ivory Coast",
 
-          desc: "Loza Maléombho is an Ivorian American fashion designer. She was raised between Abidjan, Côte d'Ivoire (West Africa) and Silver Spring, Maryland (US). At age 13 she found interest in fashion while designing for her mother her aunts and her own school uniforms",
+          desc: "Loza Maléombho is an Ivorian American fashion designer. She was raised between Abidjan, Côte d'Ivoire (West Africa) and Silver Spring, Maryland (US). At age 13 she found interest in fashion while designing...",
           longerDesc: `Loza Maléombho is an Ivorian American fashion designer. She was raised between Abidjan, Côte d'Ivoire (West Africa) and Silver Spring, Maryland (US). At age 13 she found interest in fashion while designing for her mother her aunts and her own school uniforms. In 2006 she graduated with a BFA in animation at the University of the Arts, Philadelphia. In order to gain further experience in fashion, she then moved to New York City, where she interned for designers Jill Stuart, Yigal Azrouël and Cynthia Rowley. In 2009 she launched her self-titled label.`,
           state: "Ile de France",
           img: "/images/loza.jpeg",
@@ -2045,9 +2067,10 @@ export default {
       upcomingstarsData: [
         {
           id: 1,
+          name: " Abayomi",
+
           position: "Lagos, Nigeria",
 
-          position: "position",
           desc: "Abayomi Alvin Towase is a Nigerian actor, model, filmmaker, content creator and scriptwriter. He is popular for featuring as Ebisinde in the MTV Shuga Naija Series. Abayomi Alvin was born on the 20th of June,1993",
           longerDesc:
             "Abayomi Alvin had passion for acting at a very tender age and at 17, he got enrolled for a two month acting course which was organized by his church.He came through professionally at the age of 19. He also started modelling in 2010 and in 2011 he won the pageant, Mr. Ideal Osun State. He also competed at the national level “Mr Ideal Nigeria” in 2012, which he also emerged winner.Ever since he came to limelight, he has walked various runway shows such as Music Meets Runway (2013) and ICM Fashion show (2015), featured in various shoots for numerous top designers and also shot various commercials for top brands in Nigeria which include the likes of Orbit Gum, Lumos, Fidelity Bank, Big Brother Nigeria and many others.",
@@ -2061,7 +2084,7 @@ export default {
           name: " Kidi",
           position: "Accra, Ghana",
 
-          desc: "Dennis Nana Dwamena, better known as KiDi, (born August 18, 1993) is a Ghanaian high-life and afrobeats singer-songwriter. He is signed to Lynx Entertainment and is best known for his hit single Odo. The remix features Nigerian superstars Mayorkun and Davido and has received massive airplay across Africa.",
+          desc: "Dennis Nana Dwamena, better known as KiDi, (born August 18, 1993) is a Ghanaian high-life and afrobeats singer-songwriter. He is signed to Lynx Entertainment and is best known for his hit single Odo. The remix features...",
           longerDesc: `Dennis Nana Dwamena, better known as KiDi, (born August 18, 1993) is a Ghanaian high-life and afrobeats singer-songwriter. He is signed to Lynx Entertainment and is best known for his hit single Odo. The remix features Nigerian superstars Mayorkun and Davido and has received massive airplay across Africa. KiDi won the coveted 'Artiste of the Year' award at the 2022 Ghana Music Awards[2] He also won top awards including Album of the Year and Most Popular Song of the Year. KiDi was born Dennis Nana Dwamena[4] on 18 August 1993 in Accra, Ghana to Gerald and Beatrice Thompson. He has two younger brothers, Phillip and Elliot. He received his primary school education at St. Anthony's School in Accra and proceeded to Accra Academy for his Senior High School education. He then went on to the University of Ghana Legon, where he graduated in 2016 with a degree in Economics and Information Studies. While studying Economics and Information Studies at the University of Ghana, KiDi's love for music led him to perform on various "Moonlight Café" platforms – a production that supports underground artistes and gives them a platform to display their talents. He also recorded covers of popular songs. In 2015, KiDi took a leap of faith by joining the MTN Hitmaker competition.[5] He went on to win the competition and was later signed to Lynx Entertainment.[6] KiDi shot to prominence in 2017 when he released "Say You Love Me" a song he not only composed but also arranged and produced. KiDi established himself as one of the fastest rising stars in Ghana when he released yet another chart-topper titled "Odo" in July 2017, the remix with Nigerian artist Davido and Mayorkun in December 2017, and Adiepena in April 2018`,
           state: "Ile de France",
           img: "https://cdns-images.dzcdn.net/images/artist/4c78289ec65939dbad038fbed1dd07ec/500x500.jpg",
@@ -2073,7 +2096,7 @@ export default {
           name: "Gyakie",
           position: "Lagos, Nigeria",
 
-          desc: "At present, Gyakie is a Nigerian singer and also a songwriter from Ketu, Lagos State. Mrs. Gyakie belongs to Rivers state, So she is half Nigerian & half American. Before becoming the singer, SHe was a songwriter. She has sung many hits songs like Forever, Whine, Joy and Happiness, Vacation.",
+          desc: "At present, Gyakie is a Nigerian singer and also a songwriter from Ketu, Lagos State. Mrs. Gyakie belongs to Rivers state, So she is half Nigerian & half American. Before becoming the singer, SHe was a songwriter. ..",
           longerDesc: `Gyakie was born in 2000 in Ketu, Lagos State. She did her school education from her own state. As talking about Gyakie education She persuing her graduation from Kwame Nkrumah University of Science and Technology. She worked in many Music industries and released too many hits songs. Gyakie is a fast-rising Nigerian singer known for her best songs. She released her music albums like Forever, Whine, Joy and Happiness, Vacation.Gyakie made the limelight with the ‘Forever, Whine’ song. She was born and raised up in Benue State, Nigeria. Talking about Gyakie music life, Gyakie started her music career at the age of 19. Her first song name is Whine. `,
           state: "Ile de France",
           img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gyakie_Ghanaian_Singer.jpg",
@@ -2086,7 +2109,7 @@ export default {
           name: "Omah Lay",
           position: "Lagos, Nigeria",
 
-          desc: `DOmah Lay (born 19 May 1997) is a Nigerian singer, songwriter, and record producer. He gained widespread recognition in early 2020 after his self-produced single, "Bad Influence", went viral on social media`,
+          desc: `DOmah Lay (born 19 May 1997) is a Nigerian singer, songwriter, and record producer. He gained widespread recognition in early 2020 after his self-produced single, "Bad Influence", went viral on social media...`,
           longerDesc: `Omah Lay (born 19 May 1997) is a Nigerian singer, songwriter, and record producer. He gained widespread recognition in early 2020 after his self-produced single, "Bad Influence", went viral on social media.[1] He is also known for being featured alongside Alpha P on the official Masterkraft's remix of Justin Bieber's 2021 single, "Peaches", as well as another collaboration with the latter on "Attention" in 2022. Lay won the Next Rated award at the 2020 Headies Awards. Lay started out in a rap group under the stage name "Lil King." He later moved on to songwriting and music producing, which went largely uncredited, and as a result of that, he released "Do Not Disturb" in April 2019. "Hello Brother" was released a month after. He signed to a record label named KeyQaad in June 2019, and took a seven month break.[1][5] During the break, he worked on his debut EP, Get Layd. He told OkayAfrica, "I started working on it August [of 2019]. At some point I had to go off social media, stay away from a lot of things and keep my head straight to get the project right. The first song I'd recorded on Get Layd was 'Bad Influence.' I'd done that way before the songs we had to put on the project." Following the break, he released "Bad Influence," which became the most streamed Nigerian song on Apple Music at the end of 2020. On 14 February 2020, Lay released "You," his first official single. He released his five-track debut EP, Get Layd on 22 May 2020. The EP peaked at number one on the Nigerian Apple Music charts.[1] All five songs from the EP reached the top 15 of the Apple Music charts for Nigeria, with "You" peaking at number one. In October, Lay appeared on Olamide's album Carpe Diem, on the track "Infinity", which topped the Apple Music charts for Nigeria. On 20 November, Lay released his second five-track EP, What Have We Done. All five tracks reached the top 12 of the Apple Music charts for Nigeria, with "Godly" reaching number one. On 3 July 2020, Lay was the first artist highlighted for Apple's Africa Rising Campaign to spotlight African talent. In December 2020, he was included in BBC Radio 1Xtra's annual "Hot for 2021" list.[13] He was the first African artist featured on Audiomack's #Up Now program for emerging artists;[14] was included in Montreux Jazz Festival's "20 artists to watch in 2021"; and was named BET's Amplified International Artist of the Month for November 2020. He is currently signed to Dvpper Music Distribution in Nigeria,[5][3] and Sire Records for international distribution. He was nominated in four categories at the 2020 Headies Awards, winning the Next Rated award. On 25 June 2021, Lay was featured alongside fellow Nigerian singer Alpha P on Nigerian producer Masterkraft's official remix of Canadian singer Justin Bieber's single, "Peaches". On 8 July 2021, Lay released a new single, "Understand". On 3 March 2022, he released a collaboration with Bieber, "Attention", which serves as the second collaboration between the two artists`,
           state: "Ile de France",
           img: "https://ideaslane.com/wp-content/uploads/2021/03/Omah-Lay-1.jpg",
@@ -2099,7 +2122,7 @@ export default {
           name: "Aya Nakamura",
           position: "Lagos, Nigeria",
 
-          desc: `Aya Coco Danioko (French pronunciation: ​[aja danjɔko];[1] born 10 May 1995), known by her stage name Aya Nakamura (/ˈaɪə ˌnækəˈmʊərə/ EYE-ə NAK-ə-MOOR-ə), is a French-Malian pop singer.[2] She is best known for her hit song "Djadja".`,
+          desc: `Aya Coco Danioko (French pronunciation: ​[aja danjɔko];[1] born 10 May 1995), known by her stage name Aya Nakamura (/ˈaɪə ˌnækəˈmʊərə/ EYE-ə NAK-ə-MOOR-ə), is a French-Malian pop singer. She is best known for her hit song "Djadja".`,
           longerDesc: `She was born in Bamako and immigrated to France with her family, growing up in Aulnay-sous-Bois.[4] Coming from a family of griots, she is the oldest of five siblings. She studied fashion at La Courneuve. She later launched into music with the stage name Aya Nakamura, after the character Hiro Nakamura of the NBC Heroes science fiction drama series. Nakamura published her music online, gaining a following with "Karma" and "J'ai mal". Dembo Camara, a long-time friend, became her producer and manager. Notably, her song "Brisé", composed by Christopher Ghenda, garnered 34 million views on YouTube, and a duo with rapper Fababy "Love d'un voyou" resulted in her charting in France. She released her debut album with a number of collaborations. She also had a big concert at Stade Modibo Kéïta in Bamako, where she opened for the Nigerian star Davido. Born Aya Coco Danioko in Bamako, Mali on May 10, 1995 from a family of griot (west African storytellers, praise singers, poets of oral traditions). She is the oldest of five siblings. At an early age, her family came to France and moved to Paris Northern suburbs in Aulnay-sous-Bois. She took the name Nakamura after the character Hiro Nakamura of the NBC science fiction drama series Heroes.`,
           state: "Ile de France",
           img: "https://i1.sndcdn.com/artworks-HS5DtczfAAzlVcM9-yYPe8g-t500x500.jpg",
@@ -2113,7 +2136,7 @@ export default {
 
           position: "Lagos, Nigeria",
 
-          desc: `Temilade Openiyi (born 11 June 1995), better known by her stage name Tems,[1] is a Nigerian singer, songwriter and record producer. In 2021, she earned two US top 40 entries on the Billboard Hot 100, with her collaboration with Drake on the song "Fountains" from his album Certified Lover Boy, and the Wizkid single "Essence"; the latter of which reached the top ten following a remix with Justin Bieber, and earned her a Grammy Award nomination.`,
+          desc: `Temilade Openiyi (born 11 June 1995), better known by her stage name Tems, is a Nigerian singer, songwriter and record producer. In 2021, she earned two US top 40 entries on the Billboard Hot 100, with her...`,
           longerDesc: `Temilade Openiyi (born 11 June 1995), better known by her stage name Tems, is a Nigerian singer, songwriter and record producer. In 2021, she earned two US top 40 entries on the Billboard Hot 100, with her collaboration with Drake on the song "Fountains" from his album Certified Lover Boy, and the Wizkid single "Essence"; the latter of which reached the top ten following a remix with Justin Bieber, and earned her a Grammy Award nomination. In the same year, Tems was ranked number one on the Billboard Next Big Sound chart and number-five on the Billboard Emerging Artists chart. In September 2021, Tems was signed to RCA records, and released her second EP If Orange Was a Place, which reached the top ten on the Billboard World Albums chart.[5] In May 2022, Tems' song, "Higher", from her debut extended play, For Broken Ears (2020) was sampled on the single "Wait For U" by Future alongside Drake, leading her to be credited as a featured artist.[6] The song debuted at number one on the Billboard Hot 100, making her the first African artist to debut at number one, and the second Nigerian artist to top the chart. Throughout her career, she has received multiple award nominations, while winning two NAACP Image Awards, and a Soul Train Music Awards. Temilade Openiyi was born on 11 June 1995 in Lagos, Nigeria.[11] Born to a Nigerian mother and a British-Nigerian father, Tems family moved to the United Kingdom shortly after birth. Her parents divorced when she was five. Tems relocated to Nigeria with her mother, they resided in Ilupeju before moving to Lekki then Ajah. Tems attended Dowen College before proceeding to South Africa for her Tertiary education.[11] At school, she was noticed by her music teacher and she learned to play the piano. She practiced singing with her brother's guitar accompaniment.`,
           state: "Ile de France",
           img: "https://data.mothership.tools/mothershiptools-ukprod/wp-content/uploads/2021/11/Tems-Square.jpg",
@@ -2725,6 +2748,16 @@ export default {
   background: url("/images/bg.png") center center/cover no-repeat !important;
 
   padding: 3rem 0;
+}
+@media (max-width: 650px) {
+  .none_here {
+    display: none !important;
+  }
+}
+@media (min-width: 650px) {
+  .team_carou {
+    display: none !important;
+  }
 }
 
 audio {

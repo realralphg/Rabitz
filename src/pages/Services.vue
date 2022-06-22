@@ -1,6 +1,6 @@
 <template>
-  <div class="_3i-L-zN-">
-    <div class="_15t9JO1y _1YibmBYc _1_bvS4sL _3DOEOvRI services__hero">
+  <div class="_3i-L-zN- services">
+    <div class="_15t9JO1y _1YibmBYc _1_bvS4sL no_pad _3DOEOvRI services__hero">
       <div
         style="
           background-image: url(https://facilities.frost.miami.edu/_assets/images/soundstages/austin-weeks/austin-banner-2-1240x550.jpg);
@@ -18,7 +18,7 @@
       </section>
     </div>
   </div>
-  <div class="row web items-center container q-py-lg">
+  <div class="row web items-center container q-pb-lg">
     <div class="col-md-6 col-sm-12 col-xs-12 q-my-lg q-py-lg">
       <h3 class="text-bold h3__text text-h3 text-primary">Music Production</h3>
       <p class="q-my-md">
@@ -1190,6 +1190,13 @@ img {
   .flexer {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .h3__text {
+    margin-top: 3rem;
+  }
+  ._3DOEOvRI {
+    padding-bottom: 0 !important;
   }
 }
 

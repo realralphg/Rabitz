@@ -176,15 +176,15 @@
               <div>
                 <small class="text-h6 text-weight-bold">RabitzStudios</small>
                 <br />
-                <small class="text-subtitle3 text-primary">Wetin dy Play</small>
+                <small class="text-subtitle3 text-primary"
+                  >Wetin dey Play</small
+                >
               </div>
               <div>Copyright &copy; 2022</div>
             </div>
           </div>
         </div>
-        <div class="text-center text-primary">
-          Developed by GreySoft Technologies
-        </div>
+        <div class="text-center text-primary">By GreySoft Technologies</div>
       </div>
     </footer>
   </div>

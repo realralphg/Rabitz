@@ -124,7 +124,7 @@
                   role="listitem"
                   @click="readBlog(blog)"
                 >
-                  <div class="_2vQjp_O2 k4Kjb1Dh _2aYXDjr3 _1fycIOYl">
+                  <div class="_2vQjp_O2 k4Kjb1Dh addTop _2aYXDjr3 _1fycIOYl">
                     <div class="_2ud0q49P">
                       <img :src="blog.posterImg" alt="" />
                     </div>
