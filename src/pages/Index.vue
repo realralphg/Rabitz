@@ -219,8 +219,7 @@
           The Rabitz Team
         </h2>
         <p class="_2-gkB2sO">
-          With our team of professionals, we get just about <br />
-          any media job done!
+          With our team of professionals, we get just about any media job done!
         </p>
       </div>
       <section
@@ -1431,19 +1430,19 @@
               } -->
             </div>
             <div class="KxHj95DN">
-              <div class="_3xeRr4HI">
-                <!-- <img
+              <!-- <div class="_3xeRr4HI">
+                <img
                   src="/images/aud1.jpeg"
                   alt=""
                   class="lazyload is-effect-opacity _1kyxjycq"
                   width="48"
                   height="48"
-                /> -->
+                />
                 <img src="/images/aud1.jpeg" width="48" height="48" alt="" />
-              </div>
-              <div class="_27W_cjOv">
+              </div> -->
+              <!-- <div class="_27W_cjOv">
                 <a href="" class="_31aQZWyI">{{ bigBlog.name }}</a>
-              </div>
+              </div> -->
               <h3 class="PnmEEQ_-">
                 <div class="_35iK7zmm">
                   {{ bigBlog.title }}
@@ -2572,6 +2571,8 @@ export default {
       gap: "1rem",
       perPage: 3,
       arrows: false,
+      autoplay: true,
+      interval: 3000,
       breakpoints: {
         1400: {
           perPage: 2,

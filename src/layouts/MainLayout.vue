@@ -1,9 +1,14 @@
 <template>
   <q-layout view="lHh lpR fFf">
-    <q-header elevated class="bg-white header text-dark flex" height-hint="98">
-      <q-toolbar class="q-pa-sm row justify-between container">
-        <div>
-          <img class="logo" src="/images/logo2.png" alt="" />
+    <q-header
+      elevated
+      class="bg-white q-py-sm header text-dark flex"
+      height-hint="98"
+    >
+      <q-toolbar class="q-pa-sm row justify-between">
+        <div class="row logo_div items-center text-weight-bold text-primary">
+          <img class="logo" src="/images/rabitzstudiosicon.svg" alt="" />
+          <p>Rabitz Studios</p>
         </div>
 
         <q-tabs
@@ -63,12 +68,6 @@
             label="events"
           />
 
-          <!-- <q-route-tab
-            class="q-my-sm text-dark addbor text-weight-bold"
-            to="/industries"
-            label="industries"
-          /> -->
-
           <q-route-tab
             class="q-my-sm text-dark addbor text-weight-bold"
             to="/blog"
@@ -81,125 +80,6 @@
     <q-page-container>
       <router-view />
     </q-page-container>
-
-    <!-- <q-footer class="bg-dark absolute-bottom text-white">
-      <div class="q-pa-md q-mt-lg">
-        <div class="row items-center">
-          <div class="col-md-4 col-sm-12 col-xs-12">
-            <q-toolbar-title>
-              <img class="logo" src="/images/Logo2.svg" alt="" />
-            </q-toolbar-title>
-            <p>Increasing access to careers in tech.</p>
-            <div class="socials">
-              <a href="https://twitter.com/ReskillAmerica" target="_blank">
-                <i class="ri-twitter-fill text-white"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/reskillamericans/"
-                target="_blank"
-              >
-                <i class="ri-instagram-fill text-white"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/reskill-americans"
-                target="_blank"
-              >
-                <i class="ri-linkedin-fill text-white"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/c/ReskillAmericans"
-                target="_blank"
-              >
-                <i class="ri-youtube-fill text-white"></i>
-              </a>
-              <a href="https://github.com/reskillamericans" target="_blank">
-                <i class="ri-github-fill text-white"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/reskillamericans"
-                target="_blank"
-              >
-                <i class="ri-facebook-fill text-white"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 q-my-md col-xs-12">
-            <h3 class="title text-secondary q-mb-md">Links</h3>
-            <ul>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href=" https://reskillamericans.org/learn-more/"
-                  >Learn More</a
-                >
-              </li>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href=" https://reskillamericans.org/partner/"
-                  >Partner</a
-                >
-              </li>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href=" https://reskillamericans.org/donate/"
-                  >Donate</a
-                >
-              </li>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="https://reskillamericans.org/about/"
-                  >About Us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12 q-my-md col-xs-12">
-            <h3 class="title text-secondary q-mb-md">Links</h3>
-            <ul>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="info@reskillamericans.org"
-                  >Contact Us</a
-                >
-              </li>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="https://reskillamericans.org/privacy"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href=" https://reskillamericans.org/news/"
-                  >News and Blog</a
-                >
-              </li>
-              <li class="list-unstyled">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="https://reskillamericans.org/faq/"
-                  >FAQ</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </q-footer> -->
   </q-layout>
 </template>
 
@@ -224,7 +104,7 @@ export default {
   display: none;
 }
 .logo {
-  width: 100px;
+  width: 60px;
   height: 47px;
   object-fit: contain;
 }
@@ -232,6 +112,14 @@ export default {
 .page-col {
   display: flex;
   flex-direction: column;
+}
+p {
+  margin-bottom: 0;
+}
+
+.logo_div p {
+  font-size: 1.5rem;
+  margin-top: 0.35rem;
 }
 
 .addbor {
@@ -250,13 +138,17 @@ export default {
 @media (max-width: 850px) {
   .menu {
     display: block;
+    margin-top: 0.5rem;
   }
 
   .pages {
     display: none;
   }
-  /* .logo {
-    width: 160px;
-  } */
+}
+@media (max-width: 320px) {
+  .logo_div p {
+    font-size: 1rem;
+    margin-top: 0.35rem;
+  }
 }
 </style>

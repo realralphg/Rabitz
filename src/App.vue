@@ -121,7 +121,7 @@ export default defineComponent({
   background: white;
   padding: 0.65rem;
   border-radius: 8px;
-  width: 150px;
+  width: 60%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2575,7 +2575,7 @@ span._13TWm89r {
   max-height: 400px;
   overflow: hidden;
   padding-top: 14px;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 .addTop > * {
   position: relative;
@@ -5539,6 +5539,16 @@ span._13TWm89r {
 }
 @media (max-width: 1023px) {
   .rArfi2Y4 ._2JS0AOBT:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+}
+.topEvents .rArfi2Y4 ._2JS0AOBT:first-child {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+@media (max-width: 1023px) {
+  .topEvents .rArfi2Y4 ._2JS0AOBT:first-child {
     grid-column: 1/3;
     grid-row: 1/2;
   }

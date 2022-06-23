@@ -224,9 +224,9 @@
                 /> -->
                 <img src="/images/aud1.jpeg" width="48" height="48" alt="" />
               </div>
-              <div class="_27W_cjOv">
+              <!-- <div class="_27W_cjOv">
                 <a href="" class="_31aQZWyI">{{ bigBlog.name }}</a>
-              </div>
+              </div> -->
               <h3 class="PnmEEQ_-">
                 <div class="_35iK7zmm">
                   {{ bigBlog.title }}
@@ -271,14 +271,14 @@
               </picture>
             </div>
             <div class="KxHj95DN">
-              <div class="_3xeRr4HI">
+              <!-- <div class="_3xeRr4HI">
                 <img :src="blog.smallImg" width="48" height="48" alt="" />
-              </div>
-              <div class="_27W_cjOv">
+              </div> -->
+              <!-- <div class="_27W_cjOv">
                 <a href="finance/blog.html" class="_31aQZWyI">{{
                   blog.name
                 }}</a>
-              </div>
+              </div> -->
               <h3 class="PnmEEQ_-">
                 <div class="_35iK7zmm">
                   {{ blog.title }}

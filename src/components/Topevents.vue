@@ -37,9 +37,9 @@
                 </picture>
               </div>
               <div class="KxHj95DN">
-                <div class="_3xeRr4HI">
+                <!-- <div class="_3xeRr4HI">
                   <img src="/images/aud1.jpeg" width="48" height="48" alt="" />
-                </div>
+                </div> -->
 
                 <div class="PnmEEQ_-">
                   <div class="_35iK7zmm">
@@ -53,7 +53,9 @@
                   <span>
                     {{ event.time }}
                   </span>
-                  <q-btn @click="readBlog(event)" class="">See More</q-btn>
+                  <q-btn @click="readBlog(event)" class="bg-primary text-white"
+                    >See More</q-btn
+                  >
                 </div>
               </div>
             </div>
@@ -72,9 +74,9 @@ export default {
         {
           id: 1,
           Category: "Events",
-          posterImg: "/images/kdcent13.jpg",
+          posterImg: "/images/kdcent8.jpg",
           posterImgs: [
-            "/images/kdcent13.jpg",
+            "/images/kdcent8.jpg",
             "/images/kdcent11.jpg",
             "/images/kdcent12.jpg",
           ],
@@ -88,13 +90,12 @@ export default {
           desc: "In 2017 Kaduna celebrates it's 100years of existence since 1917. Indeed it has come a long way and to mark this milestone, the northern inhabitants of Nigeria set out in cultural troupes to look back in thanksgiving and celebration even as they look forward to a radiant future of possibilities.",
           images: {
             image1: "/images/kdcent1.jpg",
-            image2: "/images/kdcent2.jpg",
             image3: "/images/kdcent3.jpg",
             image4: "/images/kdcent4.jpg",
             image5: "/images/kdcent5.jpg",
             image6: "/images/kdcent6.jpg",
             image7: "/images/kdcent7.jpg",
-            image8: "/images/kdcent8.jpg",
+            image8: "/images/kdcent13.jpg",
             image10: "/images/kdcent9.jpg",
             image11: "/images/kdcent10.jpg",
           },
@@ -153,7 +154,7 @@ export default {
           title: "The Guts Talent Show",
           smallImg: "/images/aud1.jpeg",
           smallDesc:
-            "The Guts Talent Show is a Community Development Initiative, an invention of Rabitz Studios Entertainment designed for creative youth engagement.",
+            "The Guts Talent Show is a Community Development Initiative, an invention of Rabitz Studios Entertainment...",
 
           by: "Karim",
           desc: "The Guts Talent Show is a Community Development Initiative, an invention of Rabitz Studios Entertainment designed for creative youth engagement. Its sole aim is to use creativity as a tool to promote unity and peaceful co-existence amongst people as well as propagating local content/talents exhibition with a view to community development. It features skillsets such as dance and songs.",

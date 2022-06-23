@@ -18,7 +18,7 @@
       </section>
     </div>
   </div>
-  <div class="row web items-center container q-pb-lg">
+  <div class="row web items-center container q-pt-lg q-pb-lg">
     <div class="col-md-6 col-sm-12 col-xs-12 q-my-lg q-py-lg">
       <h3 class="text-bold h3__text text-h3 text-primary">Music Production</h3>
       <p class="q-my-md">

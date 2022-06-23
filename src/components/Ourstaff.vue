@@ -31,13 +31,13 @@ export default {
   data() {
     return {
       leaders: [
-        {
-          img: "/images/chairman.jpg",
-          name: "Isah Raphael",
-          position: "Chairman",
-          profile:
-            "Yomi Jemibewon is a Managing Director at CCA and brings to the role close to two decades of experience from a background in investing and management consulting. Prior to CCA, Yomi co-founded CardinalStone Partners, and led the Principal Investments Division. Before this, he was a Vice President at Avante Capital in Lagos, and a strategy consultant with Bain & Company in New York. Yomi holds an MBA from The Wharton School of the University of Pennsylvania, and a B.Sc. and M.Sc. in Electrical Engineering from Virginia Tech.",
-        },
+        // {
+        //   img: "/images/chairman.jpg",
+        //   name: "Isah Raphael",
+        //   position: "Chairman",
+        //   profile:
+        //     "Yomi Jemibewon is a Managing Director at CCA and brings to the role close to two decades of experience from a background in investing and management consulting. Prior to CCA, Yomi co-founded CardinalStone Partners, and led the Principal Investments Division. Before this, he was a Vice President at Avante Capital in Lagos, and a strategy consultant with Bain & Company in New York. Yomi holds an MBA from The Wharton School of the University of Pennsylvania, and a B.Sc. and M.Sc. in Electrical Engineering from Virginia Tech.",
+        // },
         {
           img: "/images/pwa.jpeg",
           name: "Pwajok",
@@ -102,7 +102,7 @@ p.desc {
   position: relative;
   /* margin: 0 auto; */
   padding: 1em 0 4em;
-  max-width: 800px;
+  max-width: 1100px;
   list-style: none;
   text-align: center;
   display: grid;

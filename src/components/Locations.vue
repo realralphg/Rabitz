@@ -132,12 +132,13 @@ img {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
   margin-bottom: 2rem;
   padding: 0 0.75rem 2rem;
-  min-height: 410px;
+  min-height: 350px;
 }
 
 .card_div img {
-  height: 300px;
+  height: 250px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .p {
@@ -147,6 +148,11 @@ img {
   line-height: 1.5;
   margin-top: 16px;
   text-align: center;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {

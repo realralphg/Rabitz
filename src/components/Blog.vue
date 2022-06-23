@@ -29,6 +29,7 @@
             navigation-icon="radio_button_unchecked"
             navigation
             infinite
+            autoplay
             vertical
           >
             <q-carousel-slide

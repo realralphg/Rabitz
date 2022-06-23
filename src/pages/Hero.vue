@@ -22,6 +22,8 @@
               class="flex column justify-center hero__text items-start container"
             >
               <div class="big__logo">
+                <!-- <img class="logo" src="/images/rabitzstudiosicon.svg" alt="" /> -->
+
                 <img class="logo__big" src="/images/logowhite.png" alt="" />
               </div>
               <h1 data-testid="hero-title" class="_2trwDkHI">Rabitz Studios</h1>
