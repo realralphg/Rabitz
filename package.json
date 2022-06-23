@@ -1,18 +1,20 @@
 {
-  "name": "rabbitz",
+  "name": "Rabitz Studios",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "rabbitz",
-  "author": "ralph and emmanuel",
+  "description": "my app",
+  "productName": "Rabitz Studios",
+  "author": "emmanuel",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "@splidejs/vue-splide": "^0.5.15",
+    "@splidejs/vue-splide": "^0.6.3",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0"
+    "quasar": "^2.0.0",
+    "swiper": "^8.1.1",
+    "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "@quasar/app": "^3.0.0"

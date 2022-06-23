@@ -1,6 +1,6 @@
-# rabbitz (rabbitz)
+# emmanuel (emmanuel)
 
-A Quasar Framework app
+my app
 
 ## Install the dependencies
 ```bash

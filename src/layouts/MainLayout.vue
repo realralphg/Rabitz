@@ -1,298 +1,80 @@
 <template>
-  <q-layout view="hHh  lpR fFf">
-    <q-header reveal elevated class="bg-dark text-white">
-      <q-toolbar>
-        <q-toolbar-title>
-          <img class="logo" src="/images/logo.png" />
-        </q-toolbar-title>
-        <q-tabs narrow-indicator dense active-color="primary">
-          <q-route-tab
-            label="Home"
-            sm
-            ripple
-            no-caps
-            class="gt-sm text-negative q-mx-sm"
-            to="/"
-            exact
-          />
-          <q-route-tab
-            label="Productions"
-            ripple
-            no-caps
-            class="gt-sm text-negative q-mx-sm"
-            to="/production"
-            exact
-          />
+  <q-layout view="lHh lpR fFf">
+    <q-header
+      elevated
+      class="bg-white q-py-sm header text-dark flex"
+      height-hint="98"
+    >
+      <q-toolbar class="q-pa-sm row justify-between">
+        <div class="row logo_div items-center text-weight-bold text-primary">
+          <img class="logo" src="/images/rabitzstudiosicon.svg" alt="" />
+          <p>Rabitz Studios</p>
+        </div>
 
-          <q-route-tab
-            label="Events"
-            ripple
-            no-caps
-            class="gt-sm text-negative q-mx-sm"
-            to="/events"
-            exact
-          />
-          <q-route-tab
-            label="Creative Contents"
-            ripple
-            no-caps
-            class="gt-sm text-negative q-mx-sm"
-            to="/creative"
-            exact
-          />
-          <q-route-tab
-            label="Programs"
-            ripple
-            no-caps
-            class="gt-sm text-negative q-mx-sm"
-            to="/programs"
-            exact
-          />
-          <q-route-tab
-            label="Contact Us"
-            ripple
-            no-caps
-            class="gt-sm text-negative q-mx-sm"
-            to="/agroinvest"
-            exact
-          />
-          <q-route-tab
-            label="Register"
-            ripple
-            no-caps
-            class="gt-sm register text-negative q-mx-sm"
-            to="/agroinvest"
-            exact
-          />
+        <q-tabs
+          class="pages text-weight-bold"
+          active-color="primary"
+          indicator-color="white"
+          align="left"
+          dense
+          active-class="text-weight-bold"
+        >
+          <q-route-tab exact to="/" label="Home " />
+          <q-route-tab exact to="/about" label="About Us" />
+          <q-route-tab exact to="/services" label="Services" />
+          <q-route-tab exact to="/events" label="Events" />
+
+          <!-- <q-route-tab exact to="/industries" label="Industries" /> -->
+
+          <q-route-tab exact to="/blog" label="Blog" />
         </q-tabs>
-        <!-- <q-tabs class="login bg-negative" dense>
-          <div class="log">
-            <q-route-tab
-              label="Login"
-              ripple
-              no-caps
-              class="gt-sm text-secondary q-mx-sm"
-              to="/login"
-              exact
-            />
-          </div>
 
-          <q-route-tab
-            label="Register"
-            ripple
-            no-caps
-            class="gt-sm register text-secondary q-mx-sm"
-            to="/register"
-            exact
-          />
-        </q-tabs> -->
-
-        <!-- <q-btn
-          style="color: black"
+        <q-btn
+          class="menu"
           dense
           flat
+          color="dark"
           round
           icon="menu"
           @click="toggleRightDrawer"
-        /> -->
-
-        <div class="q-pa-sm lt-md">
-          <q-btn
-            flat
-            round
-            dense
-            icon="menu"
-            style="color: negative"
-            class="q-mr-sm"
-          >
-            <q-menu>
-              <q-list>
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="Home"
-                        to="/"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="AgroFoods"
-                        to="/agrofoods"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="AgroFarms"
-                        to="/agrofarms"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="AgroTech"
-                        to="/agrotech"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="AgroInvest"
-                        to="/agroinvest"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="Login"
-                        to="/login"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="Register"
-                        to="/register"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-btn>
-        </div>
+        />
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="rightDrawerOpen"
-      class="bg-negative"
-      side="right"
-      overlay
-      bordered
-    >
-      <!-- <q-tabs align="left">
-        <q-route-tab to="/page1" class="text-primary" label="Page One" />
-        <q-route-tab to="/page2" class="text-primary" label="Page Two" />
-        <q-route-tab to="/page3" class="text-primary" label="Page Three" />
-      </q-tabs> -->
+    <q-drawer v-model="rightDrawerOpen" side="right" bordered>
+      <q-tabs class="column" active-color="primary">
+        <div
+          style="width: 100%"
+          class="column q-py-lg items-center justify-center"
+        >
+          <q-route-tab
+            class="q-my-sm text-dark addbor text-weight-bold"
+            to="/"
+            label="home"
+          />
+          <q-route-tab
+            class="q-my-sm text-dark addbor text-weight-bold"
+            to="/about"
+            label="about"
+          />
+          <q-route-tab
+            class="q-my-sm text-dark addbor text-weight-bold"
+            to="/services"
+            label="services"
+          />
+          <q-route-tab
+            class="q-my-sm text-dark addbor text-weight-bold"
+            to="/events"
+            label="events"
+          />
 
-      <!-- drawer content -->
-
-      <!-- <q-menu>
-        <q-list>
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="Home"
-                  to="/"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="About"
-                  to="/about"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="fellowship"
-                  to="/fellowship"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="Contact"
-                  to="/contact"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-        </q-list>
-      </q-menu> -->
+          <q-route-tab
+            class="q-my-sm text-dark addbor text-weight-bold"
+            to="/blog"
+            label="blog"
+          />
+        </div>
+      </q-tabs>
     </q-drawer>
 
     <q-page-container>
@@ -317,23 +99,56 @@ export default {
   },
 };
 </script>
-
 <style scoped>
+.menu {
+  display: none;
+}
 .logo {
-  width: 170px;
-  height: 68px;
+  width: 60px;
+  height: 47px;
   object-fit: contain;
 }
 
-@media (max-width: 400px) {
+.page-col {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  margin-bottom: 0;
 }
 
-.register {
-  border: none;
-  background: #9d1e81;
-  padding: 0.75rem;
-  font-size: 14px;
-  color: #fff;
-  border-radius: 8px;
+.logo_div p {
+  font-size: 1.5rem;
+  margin-top: 0.35rem;
+}
+
+.addbor {
+  border: 1px solid #f4f4f4;
+  padding: 0.55rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.socials i {
+  font-size: 3rem;
+}
+@media (max-width: 850px) {
+  .menu {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .pages {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .logo_div p {
+    font-size: 1rem;
+    margin-top: 0.35rem;
+  }
 }
 </style>
