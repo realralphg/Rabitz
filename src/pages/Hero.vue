@@ -153,7 +153,11 @@
               </p>
             </div>
           </q-carousel-slide>
-          <q-carousel-slide :name="6" img-src="/images/act.jpeg">
+          <q-carousel-slide
+            style="background-position: top; background-size: cover"
+            :name="6"
+            img-src="/images/actclass.jpeg"
+          >
             <div
               style="height: 100%"
               class="flex column justify-center hero__text items-end text-right container"
